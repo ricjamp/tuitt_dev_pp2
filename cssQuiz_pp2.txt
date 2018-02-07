@@ -1,0 +1,22 @@
+1. a right
+2. b right
+3. a right
+4. c right
+5. a right
+6. b right
+7. b right
+8. a right
+9. c right
+10. d right
+11. b right
+12. c right
+13. d right
+14. b right
+15. c right
+16. Selector == h1  right, Declaration == font-weight: bold && color:grey (no semi-colon) right, Property Name == font-weight && color  right, Property Value == bold && grey  right, Declaration Block == { font-weight: bold; color: grey; }  right Bonus question == no semi-colon (;) after grey (second declaration) right
+
+17. a. div li a : 3 right
+	b. #article .breaking-news : 110 right
+	c. section .important-text span: 12 right
+	d. main #comment #reply : 201 right
+	e. nav > ul > li > a:hover : 14 right

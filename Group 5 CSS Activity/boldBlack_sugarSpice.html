@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bold & Black: Sugar & Spice</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Pacifico" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style type="text/css">
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: black;
+		font-family: "Abril Fatface";
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	main {	
+		height: 2300px;
+		margin: 30px 150px 5px 150px;			
+		border: 2px solid rgba(255,255,255,0.5);
+		box-shadow: 0 0 5px white;
+		background-color: #FFE1E6;
+	}
+
+	/*HEADER*/
+	header {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	h1 {
+		font-family: Pacifico;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-transform: none;
+	}
+
+	/*NAVBAR*/
+	nav {
+		height: 40px;
+		border: 3px black dotted;
+		font-size: 0.8em;
+		color: black;
+		font-weight: bolder;
+	}
+
+	nav p {
+		float: left;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	nav ul li {
+		float:left;
+		padding-left: 5px;
+		margin-left: 40px;
+		margin-top: 10px;
+	}
+
+	/*CONTENT*/
+	.content {
+		height: 900px;
+		margin-top: 50px;
+	}
+
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	a:visited{
+		text-decoration: none;
+		color: darkblue;
+	}
+
+
+	.clear:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+
+	/*CONTENT ENTRIES*/
+	.entries {
+		float: left;
+		width: 63%;
+		margin-left: 20px;
+		text-align: center;
+	}
+
+	#slideshow {
+	  overflow: hidden;
+	  height: 400px;
+	  width: 600px;
+	  margin: 0 auto;
+	}
+
+	.slide-wrapper {
+	  width: 2400px;
+	  -webkit-animation: slide 18s ease infinite;
+	}
+
+	.slide {
+	  float: left;
+	  height: 400px;
+	  width: 600px;
+	}
+
+	.slide:nth-child(1) {
+	  background-image: url(https://media4.s-nbcnews.com/j/newscms/2017_44/2209306/171031-black-licorice-today-ac-517p_68ed9328230a4e73640245e319e1b1d2.nbcnews-ux-2880-1000.jpg);
+	  background-size: 100% 100%;
+	}
+
+	.slide:nth-child(2) {
+	  background-image: url(https://i.pinimg.com/736x/fe/21/76/fe21761996a56974def8d14f66ad6016--white-dessert-tables-white-desserts.jpg);
+	  background-size: 100% 100%;
+	}
+
+	.slide:nth-child(3) {
+	  background-image: url(https://media.candystore.com/catalog/category/black-candy_1.jpg);
+	  background-size: 100% 100%;
+	}
+
+	.slide:nth-child(4) {
+	  background-image: url(http://hgtvhome.sndimg.com/content/dam/images/grdn/fullset/2014/8/13/0/Original_hgtv-mcaughey-candyapple-002.JPG.rend.hgtvcom.1280.1920.suffix/1452645815287.jpeg);
+	  background-size: 100% 100%;
+	}
+
+	.slide-caption {
+	  background-color: rgba(255,255,255,0.5);
+	  width: 100%;
+	  position: relative;
+	  top: 382px;
+	}
+
+	@-webkit-keyframes slide {
+	  20% {margin-left: 0px;}
+	  30% {margin-left: -600px;}
+	  50% {margin-left: -600px;}
+	  60% {margin-left: -1200px;}
+	  70% {margin-left: -1200px;}
+	  80% {margin-left: -1800px;}
+	  90% {margin-left: -1800px;}
+	}
+
+	.post {
+		margin-top: 60px;
+		height: 330px;
+	}
+
+	.postTitle {
+		font-size: 1.2em;
+	}
+
+	.authorComments{
+		margin-top: 10px;	
+		font-size: 0.6em;
+	}
+
+	/*ICONS*/
+	.material-icons {
+		font-size: 18px;
+		position: relative; 
+		top:5px;
+	}
+
+	.nextToIcon {
+		padding-left: 3px;
+		padding-right: 5px;
+	}
+
+	li .nextToIcon {
+		font-size: 0.7em;
+	}
+
+	.postTags {
+		font-size: 0.6em;
+	}
+
+	.hrStyle1 {
+		width: 15%;
+		margin: 15px auto 1px auto;
+		height:0; 
+  		border:0; 
+ 		border-top:1px solid rgba(128,128,128,0.3); 
+	}	
+
+	.hrStyle2 {
+		width: 15%;
+		margin: 0 auto;
+		height:0; 
+  		border:0; 
+ 		border-top:1px solid rgba(128,128,128,0.3);
+	}
+
+	.postPreview {
+		margin-top: 15px;
+	}
+
+	.postPreview img {
+		float: left;
+		margin-left: 20px;
+		margin-right: 20px;
+		height: 150px;
+		width: 40%;
+		box-shadow: 0 0 3px rgba(0,0,0, 1);
+	}
+
+	.postPreview p {
+		margin-left: 15px;
+		overflow: hidden;
+		text-align: left;
+		max-width: 310px;
+		height: 100px;
+		font-size: 0.8em;
+	}
+
+	.readMore {
+		text-decoration: none;
+		color: black;
+		position: relative;
+		left: 70px;
+		top: 15px;
+		border: 3px black solid;
+	}
+
+	aside {
+		float: right;
+		width: 30%;
+		margin-right: 15px;
+	}
+
+	.asideHead {
+		border-top: 5px double rgba(0,0,0,0.2);
+		border-bottom: none;
+		border-left: none;
+		border-right: none;
+		padding: 0;
+		font-size: 0.8em;
+		margin-bottom: 50px;
+	}
+
+	.asideHead legend {
+		margin: 0 auto;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.asideHeadStyle {
+		text-transform: lowercase;
+	}
+
+	.asideHead select {
+		margin-top: 10px; 
+		width: 150px; 
+		height: 30px;
+		color: white;
+		background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0kYjg7hd3t83KFWs8m51dmFoEuYlSl5FheZuxPbKo95H_NSt) no-repeat right center;
+		background-size: 40px 30px;
+		background-color: black;
+		background-position: 1;
+	}
+
+	.asideHead ul {
+		list-style-type: none;
+	}
+
+	.asideHead li {
+		border-bottom: 2px dotted rgba(128,128,128,0.2);
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+
+	.firstItem {
+		margin-top: 10px;
+	}
+
+	.asideHead input {
+		border: 1px solid black; 
+		font-family: "Abril Fatface";
+	}
+
+	.footerField {
+		float:left; 
+		height: 300px;
+		width: 31%;
+		margin: 50px 1.16%;
+		border-top: 5px double rgba(0,0,0,0.2);
+		border-bottom: none;
+		border-left: none;
+		border-right: none;
+		padding: 0;
+		font-size: 0.8em;
+	}
+
+	.footerField legend {
+		margin: 0 auto;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+</style>
+
+<body>
+
+	<main>
+
+		<header id="top">
+
+			<h1>Sugar and Spice</h1>
+
+			<h5>BTEMPLATES, THE BEST PLACE FOR BLOGGER TEMPLATES</h3>
+
+		</header>
+
+		<nav>
+			
+			<p>vintage blogger templates</p>
+
+			<ul>
+				
+				<li><a href="#top">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li>Contact</li>
+				<li>Facebook</li>
+				<li>Twitter</li>
+				<li>Pinterest</li>
+
+			</ul>
+
+		</nav>
+
+		<div class="content clear">
+
+			<div class="entries">
+
+				<div id="slideshow">
+				  <div class="slide-wrapper">
+				    <div class="slide"><h4 class="slide-caption">Licorice</h4></div>
+				    <div class="slide"><h4 class="slide-caption">Candy Canes</h4></div>
+				    <div class="slide"><h4 class="slide-caption">M&M's</h4></div>
+				    <div class="slide"><h4 class="slide-caption">Candied Apples</h4></div>
+				  </div>
+				</div>
+
+				<div class="post">
+
+					<div class="postTitle">
+						<h3>Demo post with formatted elements and comments.</h3>
+					</div>
+
+						<p class="authorComments">
+							<i class="material-icons">person</i> 
+							<span class="nextToIcon">BY BTEMPLATES</span>
+							<i class="material-icons">access_time</i>
+							<span class="nextToIcon">1:11 PM</span>	
+							<i class="material-icons">comment</i>
+							<span class="nextToIcon">0 Comments</span>
+						</p>
+
+					<hr class="hrStyle1">
+					<hr class="hrStyle2">
+
+					<div class="postPreview">
+
+						<figure>
+							<img src="https://cdn.cnn.com/cnnnext/dam/assets/171107164055-vantablack-watch-2-super-169.jpg">
+						</figure>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+
+						<a href="#" class="readMore">Read More</a>
+
+					</div>
+
+					<div class="clear"></div>
+
+					<hr class="hrStyle1" style="margin-top:20px">
+					<hr class="hrStyle2">
+
+					<p class="postTags">
+						<i class="material-icons">local_offer</i>
+						<span class="nextToIcon">THIS ENTRY WAS POSTED IN BLOGGER, IMAGES, TAG</span>
+					</p>
+
+				</div>	
+
+				<div class="post">
+
+					<div class="postTitle">
+						<h3>IMAGES IN THIS TAG.</h3>
+					</div>
+
+						<p class="authorComments">
+							<i class="material-icons">person</i> 
+							<span class="nextToIcon">BY BTEMPLATES</span>
+							<i class="material-icons">access_time</i>
+							<span class="nextToIcon">1:11 PM</span>	
+							<i class="material-icons">comment</i>
+							<span class="nextToIcon">0 Comments</span>
+						</p>
+
+					<hr class="hrStyle1">
+					<hr class="hrStyle2">
+
+					<div class="postPreview">
+
+						<figure>
+							<img src="http://illusion.scene360.com/wp-content/uploads/2012/02/roxx_05.jpg">
+						</figure>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+
+						<a href="#" class="readMore">Read More</a>
+
+					</div>
+
+					<div class="clear"></div>
+
+					<hr class="hrStyle1" style="margin-top:20px">
+					<hr class="hrStyle2">
+
+					<p class="postTags">
+						<i class="material-icons">local_offer</i>
+						<span class="nextToIcon">THIS ENTRY WAS POSTED IN BLOGGER, IMAGES, TAG</span>
+					</p>
+
+				</div>			
+
+				<div class="post">
+
+					<div class="postTitle">
+						<h3>Sugar and Spice is the template number 4597 in BTemplates.</h3>
+					</div>
+
+						<p class="authorComments">
+							<i class="material-icons">person</i> 
+							<span class="nextToIcon">BY BTEMPLATES</span>
+							<i class="material-icons">access_time</i>
+							<span class="nextToIcon">1:11 PM</span>	
+							<i class="material-icons">comment</i>
+							<span class="nextToIcon">0 Comments</span>
+						</p>
+
+					<hr class="hrStyle1">
+					<hr class="hrStyle2">
+
+					<div class="postPreview">
+
+						<figure>
+							<img src="http://www.denarend.com/miscellaneous/vantablack/images/vantablack-sculpture-gravitation.jpg">
+						</figure>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+
+						<a href="#" class="readMore">Read More</a>
+
+					</div>
+
+					<div class="clear"></div>
+
+					<hr class="hrStyle1" style="margin-top:20px">
+					<hr class="hrStyle2">
+
+					<p class="postTags">
+						<i class="material-icons">local_offer</i>
+						<span class="nextToIcon">THIS ENTRY WAS POSTED IN BLOGGER, IMAGES, TAG</span>
+					</p>
+
+				</div>	
+
+				<a href="#" target="#top">Home</a>	
+
+				<p style="text-align: left">Subscribe to: <a href="#" style="text-decoration: underline;">Posts</a></p>	
+
+
+			</div>
+
+
+			<aside>
+
+				<fieldset class="asideHead">
+					<legend>Site <em class="asideHeadStyle">search</em></legend>
+
+					<form style="margin-top: 15px">
+						<input type="text" placeholder="SEARCH HERE...">
+						<input type="button" value="SEARCH" style="width: 70px">
+					</form>
+				</fieldset>		
+
+				<fieldset class="asideHead">
+					<legend>Contact <em class="asideHeadStyle">us</em></legend>
+
+					<ul>
+						<li class="firstItem">
+							<i class="material-icons">home</i>
+							<span class="nextToIcon">Address: Company Address</span>
+						</li>
+						<li>
+							<i class="material-icons">local_phone</i>
+							<span class="nextToIcon">Phone: 000111222</span>
+						</li>
+						<li>
+							<i class="material-icons">mail</i>
+							<span class="nextToIcon">Email: companyemail@company.com</span>
+						</li>
+					</ul>
+				</fieldset>			
+
+				<fieldset class="asideHead">
+					<legend>Site <em class="asideHeadStyle">categories</em></legend>
+
+					<ul>
+						<li class="firstItem">Blogger</li>
+						<li>BTemplates</li>
+						<li>Demo</li>
+						<li>Images</li>
+						<li>Tag</li>
+					</ul>
+				</fieldset>				
+
+				<fieldset class="asideHead">
+					<legend>Blog <em class="asideHeadStyle">archive</em></legend>
+					<select>
+						<option selected disabled>Blog Archive</option>
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
+					</select>
+				</fieldset>
+
+			</aside>	
+
+		</content>
+
+		<div class="clear"></div>
+
+		<hr style="border-top: 5px black dotted; margin-top: 20px">
+
+		<footer>
+			
+			<fieldset class="footerField" id="about">
+				
+				<legend>About</legend>
+
+				<p style="margin-top: 20px; text-indent: 2em">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+			</fieldset>
+
+			<fieldset class="footerField">
+				
+				<legend>Blogroll</legend>
+
+				<p style="margin-top: 20px; text-indent: 2em">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+			</fieldset>
+
+
+			<fieldset class="footerField">
+		
+				<legend>Comments & Suggestions</legend>	
+
+				<form>
+
+					<label style="display: block; margin-top: 20px;">Name: <input type="text" style="border: 2px solid black"></label>
+
+					<label style="display: block; margin-top: 20px">Email: <input type="email" style="border: 2px solid black" required></label>
+					
+					<input type="textarea" style="display: block; margin: 10px auto 0 auto; width: 250px; height: 200px; border: 2px solid black">
+
+					<input type="button" value="Submit" style="display: block; margin: 10px auto 0 auto; border: 2px solid black;">
+
+				</form>	
+
+			</fieldset>
+
+		</footer>
+
+	</main>
+
+</body>
+</html>

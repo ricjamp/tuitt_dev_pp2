@@ -1,0 +1,110 @@
+body {
+	background-image: url("download.jpg");
+	background-attachment: fixed;
+	background-size: 50%;
+}
+
+.content {
+	margin: auto;
+	width: 900px;
+	height: 900px;
+	
+}
+
+.header {
+	text-align: center;
+	font-family: calibri;
+
+
+}
+
+.header2 {
+	text-align: center;
+	font-family: calibri,sans-serif;
+	line-height: normal;
+	font-size: 12px;
+	
+}
+
+.lists {
+	text-align: left;
+}
+
+.list1 {
+	display: inline-block;
+	text-indent: 1px;
+	list-style-type: none;
+}
+
+.icons1 {
+	float: right;
+	padding: 0 20px 0 0;
+	list-style-type: none;
+
+}
+
+.template1 {
+	height: 250px;
+	width: 900px;
+	font-family: calibri;
+	background-color: darkgray;
+	font-size: 10px;
+	border: 3px solid black;
+	text-align: left;
+	text-indent: 1em;
+	margin: 0;
+
+}
+
+.title1 {
+	margin: 20px 0 0 40px;
+	}
+.body1 {
+	margin: 20px 0 0 40px;
+	font-size: 15px;
+}
+
+.mainbody1 {
+	margin: 20px 20px 0 40px;
+	font-size: 15px;
+}
+
+.readmore1 {
+	margin: 20px 20px 0 40px;
+}
+
+.wrapper {
+  width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 3px solid black;
+}
+
+.block {
+  width: 450px;
+  height: 700px;
+  background: darkgray;
+  float:left;
+  
+}
+
+.about1 {
+	margin-left: 150px;
+	font-family: calibri;
+}
+
+.about2 {
+	margin: 40px;
+	font-family: calibri;
+	}
+
+.block2 {
+	margin: 0;
+	float:right;
+	width: 450px;
+  height: 700px;
+  background: darkgray;
+}
+
+

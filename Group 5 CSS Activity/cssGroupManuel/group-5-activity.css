@@ -1,0 +1,171 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+.nav-button {
+	width: 1270px;
+	height: 25px;
+	background: #000000;
+}
+
+.nav-button {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#nav-links {
+	list-style: none;
+	text-align: center;
+}
+
+ul#nav-links li {
+	display: inline;
+	background-color: black;
+	margin-right: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-size: 20px;
+}
+
+ul#nav-links li a:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+a:link {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+
+
+.header-section {
+	/*background: pink;*/
+	height: 300px;
+	margin: 25px;
+	margin-bottom: 50px;
+	position: relative;
+	border: 2px solid black;
+}
+
+.header-section1 {
+	/*background-color: blue;*/
+	text-align: center;
+	position: relative;
+	height: 150px;
+	top: 20%;
+	font-size: 75px;
+
+}
+
+.header-section2 {
+	/*background-color: green;*/
+	text-align: center;
+	position: relative;
+	top: 20%;
+}
+
+.section-page {
+	/*background-color: yellow;*/
+	height: 1000px;
+	width: 750px;
+	margin-left: 25%;
+	padding: 0;
+}
+
+.section-content {
+	/*background-color: grey;*/
+	float: right;
+	height: 250px;
+	width: 550px;
+	padding-top: 10px;
+	border-top: 1px solid black;
+
+}
+
+.picture-section {
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+.read-more {
+	float: right;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+.section-title {
+	float: left;
+	margin-bottom: 0px;
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.section-social-links {
+	float: left;
+	/*background-color: orange;*/
+	position: relative;
+	width: 200px;
+	padding-top: 5px;
+	border-top: 1px solid black;
+}
+
+.section-social-links {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+}
+
+.section-content2 {
+	/*background-color: grey;*/
+	float: right;
+	height: 260px;
+	width: 550px;
+	margin-top: 5%;
+	padding-top: 5px;
+	border-top: 1px solid black;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-social-links2 {
+	float: left;
+	/*background-color: orange;*/
+	position: relative;
+	width: 200px;
+	margin-top: 5%;
+	padding-top: 5px;
+	border-top: 1px solid black;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+}
+
+p {
+	margin-top: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-page a{ 
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
