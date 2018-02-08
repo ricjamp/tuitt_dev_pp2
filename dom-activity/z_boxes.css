@@ -1,0 +1,117 @@
+div {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	position: absolute;
+}
+
+/*First Set of Squares*/
+.blue1 {
+	background: blue;
+	top: 40px;
+	left: 40px;
+	z-index: -1;
+}
+
+.yellow1 {
+	background: yellow;
+	top: 60px;
+	left: 60px;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+.orange1 {
+	background: orangered;
+	top: 80px;
+	left: 80px;
+}
+
+/*Second Set of Squares*/
+
+.blue2 {
+	background: blue;
+	top: 240px;
+	left: 40px;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+.yellow2 {
+	background: yellow;
+	top: 260px;
+	left: 60px;
+}
+
+.orange2 {
+	background: orangered;
+	top: 280px;
+	left: 80px;
+	z-index: -1;
+}
+
+/*Third Set of Squares*/
+
+.blue3 {
+	background: blue;
+	top: 440px;
+	left: 40px;
+}
+
+.yellow3 {
+	background: yellow;
+	top: 460px;
+	left: 60px;
+	z-index: -1;
+}
+
+.orange3 {
+	background: orangered;
+	top: 480px;
+	left: 80px;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+/*Fourth Set of Squares*/
+
+.blue4 {
+	background: rgba(0,0,255,.5);
+	top: 640px;
+	left: 40px;
+	z-index: 1;
+}
+
+.yellow4 {
+	background: yellow;
+	top: 660px;
+	left: 60px;
+	z-index: -1;
+}
+
+.orange4 {
+	background: orangered;
+	top: 680px;
+	left: 80px;
+}
+
+/*Fifth Set of Squares*/
+
+/*.blue5 {
+	background: blue;
+	top: 840px;
+	left: 40px;
+}
+
+.yellow5 {
+	background: yellow;
+	top: 860px;
+	left: 60px;
+}
+
+.orange5 {
+	background: orange;
+	top: 880px;
+	left: 80px;
+	margin-bottom: 50px;
+}*/

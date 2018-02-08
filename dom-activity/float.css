@@ -1,0 +1,111 @@
+* {
+	/*reset*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.menu {
+	background-color: blue;
+	height: 140px;
+}
+
+#topIcon {
+	float:left; 
+	margin-top: 5px;
+	margin-left: 7px;
+	margin-right: 20px;
+	height:70px; 
+	width: 70px;
+}
+
+.menuHead {
+	padding-top: 23px;
+}
+
+.navBarr {
+	background-color: rgba(50,50,50,0.9);
+	padding: 10px;
+	overflow: hidden;
+}
+
+.navBarr a {
+	float: left;
+	margin-right: 10px;
+	color: white;
+	text-decoration: none;	
+}
+
+.navBarr form {
+	float: right;
+	margin-right: 15px;
+}
+
+.container {
+	background: #EAEDF0;
+}
+
+.page {
+	margin: 0 auto;
+}
+
+.clear:after {
+	content: ""; /*invisible element*/
+	clear: both;
+	display: block;
+}
+
+.sidebar {
+	height: 300px;
+	background-color: #F09A9D;
+	width: 200px;
+	float: left;
+	text-align: center;
+	padding-top: 10%;
+}
+
+.content {
+	padding: 20px;
+}
+
+.article-image {
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+.footer {
+	background-color: #D6E9FE;
+}
+
+.footerCol {
+	background: #B2D6FF;
+	height: 160px;
+	width: 31%;
+	margin: 20px 1.16%;
+	float:left;
+}
+
+.avatar {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 25px;
+	border-radius: 40px;
+	background-color: #D6E9FE;
+}
+
+.username {
+	margin-top: 30px;
+}
+
+.comment {
+	margin: 10px;
+	overflow: hidden;
+}
