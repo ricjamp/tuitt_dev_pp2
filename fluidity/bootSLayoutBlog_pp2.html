@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Layout Replication</title>
+
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<style type="text/css">
+
+	body {
+		padding-top: 70px; /*Set body padding-top to prevent header collapsing into top navbar*/
+	}
+
+	.navbar-inverse {
+		background-color: black;
+		border-radius: 0; /*Reduce whitespace in corners*/
+	}
+
+	.container-fluid {
+		max-width: 1200px; /*Set max-width to center body*/
+	}
+
+	figure {
+		margin-bottom: 2em;
+	}
+
+	figcaption {
+		margin-top: 0.5em;
+	}
+
+	.form-control {
+		width: 100%;
+	}
+
+	.h4-margin-t-Set {
+		margin-top: 0;
+	}
+
+	/*Set footer margin-bottom for aesthetics*/
+	footer {
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<!-- Navbar: Inverse Style and Fixed to Top-->
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Sitename</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+
+	        <li><a href="#">Nav Item 1 <span class="sr-only">(current)</span></a></li>
+
+	        <li><a href="#">Nav Item 2 <span class="sr-only">(current)</span></a></li>
+
+	        <li><a href="#">Nav Item 3 <span class="sr-only">(current)</span></a></li>
+	      
+	      </ul>
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>	<!-- Navbar -->
+
+
+	<div class="container-fluid">
+
+	<!-- Use the grid system -->
+	<!-- First row for header -->
+		<div class="row">
+			<!-- Page header Small 12 to take entire width on small devices -->
+			<div class="col-sm-12">
+		<!-- PAGE HEADER -->
+				<div class="page-header">
+				  <h1>Blog post title</h1>
+				  	<p>Posted by		  	
+				  	<span class="glyphicon glyphicon-user"></span>
+				  	<a href="#" style="text-decoration: none">RJ_PP2</a>
+				  	on
+				  	<span class="glyphicon glyphicon-time"></span>
+				  	09 February 2018 9:00 am
+				  	</p>
+				</div> <!-- Page Header -->
+			</div> <!-- Header col-sm-12 -->
+
+		</div>
+
+		<!-- Second row for content (col-8 for left, col-4 for right) -->
+		<div class="row">
+			
+			<!-- 1st Column for left content -->
+			<div class="col-sm-8">
+				<!-- Figure with a caption -->
+				<figure>
+					<!-- Apply img-responsive BS class to make img responsive -->
+					<img class="img-responsive" src="http://placehold.it/900x400">
+					<figcaption>Caption here</figcaption>
+				</figure>
+
+				<!-- Use BS lead typography class to make first paragraph stand out -->
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<!-- Separate content from comments -->
+				<hr>
+
+				<h3>Comments</h3>
+				<!-- Wrap comments in a well (BS well class) -->
+				<div class="well">
+					<!-- BS media class to generate comments -->
+					<div class="media">
+						<!-- BS media-left class for commenter pic -->
+						<div class="media-left">
+							<img src="http://placehold.it/70x70">
+						</div>
+						<!-- BS media-body for commenter name and comments -->
+						<div class="media-body">
+							<!-- Commenter Name -->
+							<h4>
+							<!-- Commenter Name links to profile -->
+							<a href="#">Mayahuel Rodriguez</a>
+							</h4>
+							<!-- Comment Date & Time link-->
+							<p>
+							<a href="#">12 January 2015 11:13 pm</a>
+							</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+							<!-- Wrap buttons in a paragraph to place in a block -->
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Upvote						
+							</button>
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-thumbs-down"></span>
+								Downvote						
+							</button>
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-comment"></span>
+								Reply						
+							</button>
+						</div>
+					</div> <!-- End of media -->
+				</div> <!-- End of comment -->
+				
+				<!-- Second Comment -->
+				<div class="well">
+					<!-- BS media class to generate comments -->
+					<div class="media">
+						<!-- BS media-left class for commenter pic -->
+						<div class="media-left">
+							<img src="http://placehold.it/70x70">
+						</div>
+						<!-- BS media-body for commenter name and comments -->
+						<div class="media-body">
+							<!-- Commenter Name -->
+							<h4>
+							<!-- Commenter Name links to profile -->
+							<a href="#">Mayahuel Rodriguez</a>
+							</h4>
+							<!-- Comment Date & Time link-->
+							<p>
+							<a href="#">12 January 2015 11:13 pm</a>
+							</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+							<!-- Wrap buttons in a paragraph to place in a block -->
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Upvote						
+							</button>
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-thumbs-down"></span>
+								Downvote						
+							</button>
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-comment"></span>
+								Reply						
+							</button>
+						</div>
+					</div> <!-- End of media -->
+				</div> <!-- End of comment -->
+
+				<!-- Third Comment -->
+				<div class="well">
+					<!-- BS media class to generate comments -->
+					<div class="media">
+						<!-- BS media-left class for commenter pic -->
+						<div class="media-left">
+							<img src="http://placehold.it/70x70">
+						</div>
+						<!-- BS media-body for commenter name and comments -->
+						<div class="media-body">
+							<!-- Commenter Name -->
+							<h4>
+							<!-- Commenter Name links to profile -->
+							<a href="#">Mayahuel Rodriguez</a>
+							</h4>
+							<!-- Comment Date & Time link-->
+							<p>
+							<a href="#">12 January 2015 11:13 pm</a>
+							</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+							<!-- Wrap buttons in a paragraph to place in a block -->
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								Upvote						
+							</button>
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-thumbs-down"></span>
+								Downvote						
+							</button>
+							<button class="btn btn-sm btn-default">
+								<span class="glyphicon glyphicon-comment"></span>
+								Reply						
+							</button>
+						</div>
+					</div> <!-- End of media -->
+				</div> <!-- End of comment -->
+
+				<!-- Separate comments with Comment entry -->
+				<hr> 
+
+				<h3>Leave a comment</h3>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<!-- Place form in a well -->
+				<div class="well">
+					<form>
+						<!-- Wrap inputs in BS form-group class -->
+						<!-- Commenter Name, default to Anon if left empty -->
+						<div class="form-group">
+							<!-- Don't wrap input in a label to expand input width to fill well -->
+							<label for="commentName">Name</label>
+							<!-- BS form-control class for inputs -->
+							<input name="commentName" type="text" placeholder="Enter your name" class="form-control">
+						</div>
+						<!-- Commenter Email, to require or not to require, that is the question -->
+						<div class="form-group">
+							<!-- Don't wrap input in a label to expand input width to fill well -->
+							<label for="commentName">Email</label>
+							<!-- BS form-control class for inputs -->
+							<input name="commentEmail" type="email" placeholder="Enter email" class="form-control">
+							<!-- Reminder paragraph for valid email using BS help-block class -->
+							<p class="help-block">Make sure you use a valid email address</p>
+						</div>
+						<!-- Comment text area -->
+						<div class="form-group">
+							<!-- Don't wrap input in a label to expand input width to fill well -->
+							<label for="commentBody">Comment</label>
+							<!-- BS form-control class for inputs -->
+							<textarea class="form-control" name="commentBody"></textarea>
+						</div>
+						<!-- Submit Comment Button -->
+						<!-- Buttons in a form == Input Submit -->
+						<button type="submit" class="btn btn-default">Submit</button>
+
+
+					</form>
+				</div> <!-- End of Comment Entry Form -->
+
+			<!-- Separate Comment Entry Form from Comment Pager -->
+			<hr>
+			<!-- BS pager class w/in a nav -->
+				<nav>
+				  <ul class="pager">
+				  	<!-- BS previous class to align left older content -->
+				    <li class="previous">
+				    <a href="#"> 
+				    <!-- Use glyphicon-menu-left for arrow -->
+				    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+				    Older</a>
+				    </li>
+				    <li class="next">
+				    <a href="#"> 
+				    Newer
+				    <!-- Use glyphicon-menu-right for arrow, hidden aria -->
+				    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+				    </a>
+				    </li>
+				  </ul>
+				</nav> <!-- End of pager -->
+
+			</div> <!-- End of Left Column -->
+
+			<!-- Content Right Column -->
+			<div class="col-sm-4">
+				<!-- Search bar in a well -->
+				<div class="well">
+					<!-- Make search visible with a heading tag -->
+					<h4 class="h4-margin-t-Set">Search</h4>
+					<!-- Wrap Search Input Area and Button in a form tag -->
+					<form>
+					<!-- Wrap search bar in BS input-group to append search button -->
+						<div class="input-group">
+							<!-- Screen Reader labelling for search -->
+							<label class="sr-only" for="search-form">Search the site</label>
+							<!-- BS form-control class for inputs -->
+							<input class="form-control" name="search-form">
+							<!-- Search Button -->
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">
+									<!-- Place a glyphicon for Search Icon -->
+									<span class="glyphicon glyphicon-search"></span>
+									<!-- Screen Reader Search Button -->
+									<span class="sr-only">Search</span>
+								</button>
+							</span>
+						</div>			
+					</form>		
+				</div> <!-- End of Search bar well-->
+				<!-- Link List Group for Categories -->
+				<!-- BS list-group class to wrap list of links -->
+				<div class="list-group">
+					<!-- BS list-group-item class for list items in a list-group class -->
+					<!-- First link is BS active class -->
+					<a href="#" class="list-group-item active">Category 1</a>
+					<a href="#" class="list-group-item">Category 2</a>		
+					<a href="#" class="list-group-item">Category 3</a>		
+				</div> <!-- End of list group -->
+				<!-- Sidebar panel widget using BS panel with heading & title class -->
+				<div class="panel panel-default">
+					<!-- BS panel-heading class -->
+					<div class="panel-heading">
+						<!-- BS panel-title class -->
+				    	<h3 class="panel-title">Sidebar panel widget</h3>
+				    </div>
+				    <!-- BS panel-body class -->
+				    <div class="panel-body">
+				    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    	tempor incididunt ut labore et dolore magna aliqua. 
+				    </div>
+				</div>
+
+				<div class="panel panel-default">
+					<!-- BS panel-heading class -->
+					<div class="panel-heading">
+						<!-- BS panel-title class -->
+				    	<h3 class="panel-title">Sidebar panel widget</h3>
+				    </div>
+				    <!-- BS panel-body class -->
+				    <div class="panel-body">
+				    	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    	tempor incididunt ut labore et dolore magna aliqua. 
+				    </div>
+				</div>
+
+			</div> <!-- End of Right Column -->
+
+		</div> <!-- End of Row -->
+
+		<!-- Separate Content from footer -->
+		<hr>
+		<!-- Footer with lg-12 column to set block despite large screens -->
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy Sitename 2018</p>
+				</div>
+			</div>
+		</footer>
+
+	</div> <!--CONTAINER-->
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

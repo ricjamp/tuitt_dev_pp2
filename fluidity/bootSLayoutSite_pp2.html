@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is Neat: Imperfect-Clone</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<style type="text/css">
+
+		* {
+			/*border: 1px solid black; */
+		/*Remove this once finished, add a border to everything to check dimensions*/
+		/*Reset default margin,padding, box-sizing values*/
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html {
+			font-size: 14px;
+		}
+
+		body, html {
+			min-height: 100%;
+			height: 100%;
+			width: 100%;
+		}
+
+		.header {
+			height: 100%;
+			max-height: 650px;
+			width: 100%;
+			background-color: skyblue;
+			color: white;
+		}
+
+		header a {
+			color: white;
+			text-decoration: none;
+		}
+
+		.row {
+			margin: 20px 15px;
+		}
+
+		.navbar-brand {
+			float: none;
+		}
+
+		.navbar-brand img {
+			width: 90px;
+		}
+
+		.paddedTop {
+			padding-top: 30px;
+		}
+
+		.navbar-right {
+			margin-right: 0;
+		}
+
+		.quoteBtn {
+			font-size: 24px; 
+			padding: 14px 45px; 
+			border-radius: 999px;
+			margin: 0;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="content">
+		<header class="header">
+			<!-- Keep navbar hidden in extra small devices -->
+			<!-- Remember syntax: navbar->container->row->col to set dimensions -->
+			<div class="navbar">
+				<div class="container-fluid">
+					<div class="row">
+						<!-- Brand on Nav -->
+						<div class="col-md-2 col-xs-12">
+							<a href="" class="navbar-brand">
+								<img src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/logo.png"
+								class="img-responsive center-block">
+							</a>
+						</div>	
+						<!-- Nav Site Links		 -->
+						<div class="paddedTop col-md-7 hidden-xs hidden-sm">
+							<!-- Menu Links -->
+							<div class="navbar-nav">
+								<a href="#">How It Works</a> 								
+								<a href="#">Our Promise</a> 								
+								<a href="#">Our Reviews</a> 								
+								<a href="#">Cleaning Checklist</a> 								
+							</div>
+						</div>
+						<!-- Right Navbar for company email -->
+						<div class="paddedTop col-md-3 hidden-xs hidden-sm">
+							<div class="nav navbar-right">
+								<span class="glyphicon glyphicon-user" aria-hidden="true" style="color:white"></span>
+								<a href="#">hello@thisisneat.com.au</a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- End of Container -->
+			</div> <!-- End of Navbar -->
+
+				<!-- A row for the heading -->
+				<div class="row">
+					<div class="col-sm-12" style="text-align: center">
+						<h1 style="font-size: 4.5em" class="hidden-xs hidden-sm">You move out, we clean up.</h1>
+						<h4 style="font-size: 1.5em">The simplest way to get your bond back. <em>Guaranteed.</em></h4>
+					</div>
+				</div>
+				<!-- A row for the quote button -->
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<!-- A link styled as a button to quote page						 -->
+						<a href="#" class="quoteBtn btn btn-primary btn-lg" role="button">Get your quote</a>
+					</div>
+				</div>
+
+		</header> <!-- End of Header -->
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
