@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Pseudo-clone: Twitter Sign Up</title>
+
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -11,6 +14,11 @@
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 	<style type="text/css">
 		
 		.navbar-brand
@@ -19,22 +27,23 @@
 		    width: 100%;
 		    left: 0;
 		    text-align: center;
-		    margin:0 auto;
-		}
-
-		.navbar-toggle {
-		    z-index:3;
+		    margin:auto;
+		    color: skyblue; 
+		    font-size: 1.5em;
 		}
 
 		.jumbotron {
 			background: none;
-			text-align: center;
 		}
 
 		.form-control {
-			font-size: 18px;
 			font-weight: bold;
-			width: 75%;
+			width: 350px;
+			margin: 10px auto;
+		}
+
+		.btn-primary {
+
 		}
 
 	</style>
@@ -45,84 +54,88 @@
 	<!-- NAVBAR -->
 	<nav class="navbar navbar-inverse" role="navigation" style="border-radius: 0">
 
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>    
-	    <span class="navbar-brand"><i class="fab fa-twitter" style="color: skyblue; font-size: 1.5em"></i></span>
-	  </div>
+	    	<div class="navbar-header">
+	      		<a class="navbar-brand" href="#">
+	    			<span><i class="fab fa-twitter"></i></span>
+	      		</a>
+	      	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggleMenu" aria-expanded="false">
+	      	        <span class="sr-only">Toggle navigation</span>
+	      	        <span class="icon-bar"></span>
+	      	        <span class="icon-bar"></span>
+	      	    </button>
+	        </div>	
 
-	  <div class="navbar-collapse collapse">
+	        <div class="collapse navbar-collapse" id="toggleMenu">
+	        	<ul class="nav navbar-nav navbar-right" style="padding-right: 15px">
+	        		<li class="dropdown">
+	        		  	
+	        		  	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariahaspopup="true" aria-expanded="false" style="color:white"><small>Have an account?</small> <strong>Log in</strong><span class="caret"></span></a>
 
-	    <ul class="nav navbar-nav navbar-right" style="padding-right: 15px">
+	        		  	<ul class="dropdown-menu">
+	        		   		<li>#</li>
+	        		  		<li>#</li>
+	        		  		<li>#</li>
+	        		  	</ul>
 
-		    <li class="dropdown">
-		      	
-		      	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariahaspopup="true" aria-expanded="false" style="color:white"><small>Have an account?</small> <strong>Log in</strong><span class="caret"></span></a>
+	        		</li>
+	        		<li class="dropdown">	      	
+	        		  	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariahaspopup="true" aria-expanded="false" style="color:white">Language: <strong>English</strong><span class="caret"></span></a>
 
-		      	<ul class="dropdown-menu">
-		       		<li>#</li>
-		      		<li>#</li>
-		      		<li>#</li>
-		      	</ul>
+	        		  	<ul class="dropdown-menu">
+	        		  		<li>Tagalog</li>
+	        		  		<li>Cebuano</li>
+	        		  		<li>Elvish</li>
+	        		  	</ul>
 
-		    </li>
-
-		    <li class="dropdown">	      	
-		      	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ariahaspopup="true" aria-expanded="false" style="color:white">Language: <strong>English</strong><span class="caret"></span></a>
-
-		      	<ul class="dropdown-menu">
-		      		<li>Tagalog</li>
-		      		<li>Cebuano</li>
-		      		<li>Elvish</li>
-		      	</ul>
-
-		    </li>
-
-	    </ul>
-
-	  </div>
+	        		</li>
+	        	</ul>
+	        </div>	   
 
 	</nav> <!-- END OF NAVBAR -->
 
 	<!-- SIGN UP FORM -->
 	<div class="jumbotron">
 
-		<div class="container">
-
-			<form class="form-horizontal">
-
-				<div class="col-md-6 col-md-offset-3" style="text-align: left; margin-left: 30%; margin-bottom: 15px">
-					<h1 style="font-size: 2em">Join Twitter today.</h1>
+		<div class="container-fluid">
+			<!-- Make a horizontal form -->
+			<form class="form.horizontal">
+				<div class="form-group form-group-lg">
+					<div class="col-xs-12">
+						<h2 style="text-align: center">Join Twitter Today.</h2>
+					</div>
+					<div class="col-xs-12">
+						<input type="text" class="form-control center-block" placeholder="Full name">
+					</div>			
+					<div class="col-xs-12">
+						<input type="text" class="form-control center-block" placeholder="Phone or Email">
+					</div>		
+					<div class="col-xs-12">
+						<input type="password" class="form-control center-block" placeholder="Password">
+					</div>
+					<div class="col-xs-12">
+						<div class="checkbox" style="width: 350px; margin: 10px auto;">
+							<label>
+								<input type="checkbox">
+								<span>
+									Personalize Twitter based on where you've seen Twitter content on the web. 
+									<a href="#">Learn more.</a>
+								</span>
+							</label>	
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<button type="button" class="btn btn-primary btn-lg" style="width: 350px; display: block; margin: 10px auto; border-radius: 999px">Sign Up</button>
+					</div>
+					<div class="col-xs-12">
+						<p style="width: 350px; margin: 10px auto; font-size: 12px">
+							By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use. Others will be able to find you by email or phone number when provided.
+						</p>
+					</div>
+					<div class="col-xs-12">
+						
+					</div>
 				</div>
-				
-				<div class="form-group">
-					
-					<div class="col-md-6 col-md-offset-3 text-center" style="margin-left: 30%">
-							<input type="text" class="form-control" placeholder="Full name">
-					</div>
-
-				</div>		
-
-				<div class="form-group">
-					
-					<div class="col-md-6 col-md-offset-3 text-center" style="margin-left: 30%">
-						<input type="text" class="form-control" placeholder="Phone or Email">
-					</div>
-
-				</div>		
-
-				<div class="form-group">
-					
-					<div class="col-md-6 col-md-offset-3" style="margin-left: 30%">
-						<input type="password" class="form-control" placeholder="Password">
-					</div>
-
-				</div>
-
-			</form>
+			</form>		
 
 		</div>
 
