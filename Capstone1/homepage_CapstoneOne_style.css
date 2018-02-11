@@ -1,0 +1,47 @@
+body {
+	background-color: #B8E2FC;
+}
+
+.navbar-default {
+	border-bottom: double #00274d 5px;
+	height: 100px;
+}
+
+.navbar {
+	min-height: 100px;
+}
+
+ 
+.navbar-brand {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+	margin: auto;
+}
+
+
+.navbar-brand img {
+	width: 50px;
+	display: inline-block; /*Adjacent to Site Name*/
+}
+
+.navbar-toggle {
+  /* (100px - button height 34px) / 2 = 33px */
+  margin-top: 33px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (100px - line-height of 27px) / 2 = 36.5px */
+    padding-top: 35px;
+    padding-bottom: 32px;
+    line-height: 27px;
+  }
+}
+
+.navbar-nav li a[href="#"] {
+	color: white;
+}
