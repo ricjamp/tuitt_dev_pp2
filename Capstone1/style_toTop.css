@@ -1,0 +1,16 @@
+/*From Tuts Codepen*/
+	.go-top {
+		position: fixed;
+		bottom: 1em; /*2em;*/
+		right: 1em; /*2em;*/
+		text-decoration: none;
+		color: yellow;
+		background-color: rgba(0,0,0,0.3);
+		font-size: 12px;
+		padding: 1em;
+		display: none;
+	}
+
+	.go-top:hover {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
