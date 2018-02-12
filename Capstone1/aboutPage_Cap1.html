@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>#aboutu.Us-u</title>
+
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+
+		body {
+			padding-top: 70px;
+			background-color: darkblue;
+		}
+
+		.navbar-default {
+			border-bottom: double #00274d 5px;
+		}
+		 
+		.navbar-brand {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 0;
+			margin: auto;
+			padding-top: 5px;
+		}
+
+
+		.navbar-brand img {
+			width: 30px;
+			height: 40px;
+			display: inline-block; /*Adjacent to Site Name*/
+			padding-bottom: 2px;
+		}
+
+		.siteName {
+			padding-left: 5px;
+			vertical-align: middle;
+			display: inline-block;
+			list-style-type: none;
+		}
+
+		.navLinkGames {
+			background-color: brown;
+		}
+
+		#partyGame {
+			background-color: yellow;
+		}
+
+		#stratGame {
+			background-color: blue;
+		}
+
+		#themeGame {
+			background-color: red;
+		}
+
+		.dropDownGameList>li>a {
+			color: black;
+		}
+
+		.navLinkHome {
+			background-color: darkblue;
+		}
+
+		.navLinkContact {
+			background-color: red;
+		}
+
+		.navbar-nav>.navMainLi>a[href] { /*Increased specificity*/
+			color: white;
+			font-weight: bolder;
+		}
+
+		.aboutSite {
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">			
+			<!-- Navbar header -->
+			<div class="navbar-header">
+				<!-- Logo image and Website Name -->
+				<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
+					<img src="halfMeeple.png">
+					<ul class="siteName">
+						<li>tl;dr</li>
+						<li>gameRules</li>
+					</ul>
+				</div>
+				<!-- Toggle button -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+		  	        <span class="icon-bar"></span>
+		  	        <span class="icon-bar"></span>
+		  	        <span class="icon-bar"></span>					
+				</button>
+			</div> <!-- navbar header -->
+			<!-- Collapsible Menu -->
+			<div class="collapse navbar-collapse navbar-right" id="navMenuLinks">
+				<ul class="nav navbar-nav">
+					<!-- Drop Down Menu for Games List -->
+					<li class="dropdown navMainLi navLinkGames">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
+						<ul class="dropdown-menu dropDownGameList">
+							<li id="partyGame"><a href="#">Party Board Games</a></li>
+							<li id="stratGame"><a href="#">Strategy Board Games</a></li>
+							<li id="themeGame"><a href="#">Thematic Board Games</a></li>
+						</ul>
+					</li> <!-- drop down games list -->
+					<li class="navMainLi navLinkHome"><a href="homepage_CapstoneOne_v1.html">Home</a></li>
+					<li class="navMainLi navLinkContact"><a href="contactPage_Cap1.html">Contact</a></li>
+				</ul>
+			</div>
+		</div> <!-- container fluid -->
+	</nav> 
+
+	<div class="container text-center aboutSite">
+		<h1>About this Site</h1>
+		<p>This site was made to comply with Tuitt Coding Bootcamp's Capstone 1 Requirements.</p>
+		<p>I'll probably use this as a template for making an app on android. Someday.</p>
+		<p style="font-size: 10px;">P.S. <br> It was also made as a selfish project to have my board games' rules on-hand at all times.</p>
+	</div>
+
+</body>
+</html>

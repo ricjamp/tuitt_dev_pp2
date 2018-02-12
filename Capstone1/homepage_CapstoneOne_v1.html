@@ -24,16 +24,16 @@
 </head>
 <body>
 
-	<!-- Start with a navbar, non-sticky (Add a mega menu link later for games) -->
+	<!-- Start with a navbar, sticky only for Homepage (Add a mega menu link later for games) -->
 	<!-- Homepage should not have a link to home, add that to the internal pages instead -->
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">			
 			<!-- Navbar header -->
 			<div class="navbar-header">
 				<!-- Logo image and Website Name -->
-				<div class="navbar-brand"> <!-- CSS: Set brand to center when on mobile -->
-					<img src="https://i.pinimg.com/564x/c3/6f/f2/c36ff20341d5e2be5dc9010b607bf627.jpg">
-					<ul style="padding-left: 5px;vertical-align: middle;display: inline-block;list-style-type: none">
+				<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
+					<img src="halfMeeple.png">
+					<ul class="siteName">
 						<li>tl;dr</li>
 						<li>gameRules</li>
 					</ul>
@@ -49,22 +49,151 @@
 			<!-- Collapsible Menu -->
 			<div class="collapse navbar-collapse navbar-right" id="navMenuLinks">
 				<ul class="nav navbar-nav">
-					<li style="background: url(http://static.wixstatic.com/media/5e6e38_8a16336d7c274d878b4944c0f966dca7~mv2.jpg) no-repeat; background-size: 100% 100%"><a href="#" style="top:30px">GamesList</a></li>
-					<li style="background-color: red"><a href="#" style="top:30px">About</a></li>
-					<li style="background-color: purple"><a href="#" style="top:30px">Contact</a></li>
+					<!-- Drop Down Menu for Games List -->
+					<li class="dropdown navMainLi navLinkGames">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
+						<ul class="dropdown-menu dropDownGameList">
+							<li id="partyGame"><a href="#">Party Board Games</a></li>
+							<li id="stratGame"><a href="#">Strategy Board Games</a></li>
+							<li id="themeGame"><a href="#">Thematic Board Games</a></li>
+						</ul>
+					</li> <!-- drop down games list -->
+					<li class="navMainLi navLinkAbout"><a href="aboutPage_Cap1.html">About</a></li>
+					<!-- Contact Form Modal Button-->
+					<li class="navMainLi navLinkContact"><a href="javascript:void(0)" id="contactBtn">Contact</a></li>
 				</ul>
 			</div>
 		</div> <!-- container fluid -->
 	</nav> 
+	<!-- Modal Contact Form, thank you w3schools -->
+	<div id="modalContactForm" class="modal">
+		<div class="modal-content">
+			<!-- Modal Close Button -->
+			<span class="closeForm">&times</span>
+			<!-- Contact Form -->
+			<div class="container">
+				<h4>Want us to add a game?</h4>
+				<form>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Name">
+					</div> <!-- form-group -->
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Email">
+					</div> <!-- form-group -->
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Subject">
+					</div> <!-- form-group -->
+					<div class="form-group">
+						<textarea class="form-control" placeholder="Game Suggestions" rows="7"></textarea>
+					</div> <!-- form-group -->
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<!-- Jumbotron Site Slogan -->
-	<div class="container">
+	<div class="container page-header">
 		<div class="jumbotron">
 			<h2>Can't stomach the overly complicated rules for your new board game?
 			Or you just want to refresh yourself with the rules from a game you haven't played in a while?
-			Then, this site's for you! Browse our collection of game rules -  cheatsheets and other helpful information to learn more about board games.</h2>
+			Then, this site's for you! Browse our collection of game rules,cheatsheets and other helpful information to learn more about board games.</h2>
 		</div> <!-- jumbotron -->
 	</div>
+
+	<hr style="border-bottom: double black 5px; margin-bottom: 0">
+	<!-- Board Game Categories -->
+	<div class="container-fluid categoryAll text-center">
+		<!-- Title -->
+		<div class="row" style="border-bottom: 5px groove black">
+			<div class="col-xs-12">
+				<h1>Board Game Categories</h1>
+			</div>
+		</div>
+		<!-- 3 Column on medium, 1 on xs -->
+		<div class="row">
+			<!-- Party Games -->
+			<div class="col-md-4 col-xs-12 category">
+				<div class="thumbnail">
+					<img src="https://cf.geekdo-images.com/images/pic2582929_md.jpg" alt="Codenames: Number 1 Party Game on BGG">
+					<div class="caption">
+						<h3>PARTY GAMES</h3>
+						<p>Games that encourage social interaction. They generally have easy setups and simple rules, and they can accommodate large groups of people and play in a short amount of time.</p>
+					</div> <!-- caption -->
+					<a href="#" class="btn btn-primary" role="button">Browse here</a>
+				</div> <!-- thumbnail -->
+			</div>		
+			<!-- Thematic Games -->
+			<div class="col-md-4 col-xs-12 category">
+				<div class="thumbnail">
+					<img src="https://cf.geekdo-images.com/images/pic2663291_md.jpg" alt="Through the Ages: A New Story of Civilization">
+					<div class="caption">
+						<h3>STRATEGY GAMES</h3>
+						<p>Games in which the players' decision-making skills have a high significance in determining the outcome. These include abstract games, with artificial rules and little or no theme, and simulations (including wargames), with rules designed to emulate and reproduce a real or fictional scenario.</p>
+						<a href="#" class="btn btn-primary" role="button">Browse here</a>
+					</div> <!-- caption -->
+				</div> <!-- thumbnail -->
+			</div>			
+			<!-- Strategy Games -->
+			<div class="col-md-4 col-xs-12 category">
+				<div class="thumbnail">
+					<img src="https://cf.geekdo-images.com/images/pic2437871_md.jpg" alt="Gloomhaven: Overall Number 1 on BGG (Feb 2018)">
+					<div class="caption">
+						<h3>THEMATIC GAMES</h3>
+						<p>Thematic Games contain a strong theme which drives the overall game experience, creating a dramatic story ("narrative") similar to a book or action movie. These games are usually created around its main dramatic theme, which its rules and mechanics aim to depict. Themes typically involve fighting or good-versus-evil conflicts with heroes and villains.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Browse here</a></p>
+					</div> <!-- caption -->
+				</div> <!-- thumbnail -->
+			</div>
+		</div> <!-- category row -->
+	</div> <!-- container-fluid -->
+	<hr style="border-bottom: double black 5px; margin: 0">
+	<!-- Footer: Mission Statement-->
+	<footer class="text-center">
+		<div class="container footerContent">
+			<div class="row">
+				<!-- Credits Section; full width on small devices -->
+				<div class="col-md-4 col-xs-12 creditsTxt">
+					<h4>Credits:</h4>
+					<p>Images: All credits for the images belong to the images in BGG (boardgamegeek.com), provided by the image's respective publisher.</p>
+					<p>Content Description: Content Description taken from BGG (boardgamegeek.com).</p>
+					<p>Disclaimer: tl;dr gameRules does not seek to profit from this website and promotes each game with links to bgg and their corresponding publisher.</p>
+				</div>
+				<!-- Contact Form, full width on mobile -->
+				<div class="col-md-4 col-xs-12 text-center" id="contactFormHome">
+					<p class="footerTxt">Let's make Modern Board Games more accessible. More players, less lonely gamers, less dust in our game boxes. :P</p>
+				</div>
+			</div> <!-- Row -->
+		</div> <!-- footerContent -->
+	</footer>
+
+<script type="text/javascript">
+	// Get the modal
+	var modal = document.getElementById('modalContactForm');
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("contactBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("closeForm")[0];
+
+	// When the user clicks on the button, open the modal 
+	btn.onclick = function() {
+	    modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	    modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	document.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+</script>
 
 </body>
 </html>
