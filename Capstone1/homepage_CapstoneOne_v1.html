@@ -18,8 +18,12 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<!-- Personal Style Sheet -->
+	<!-- Personal Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="styleNavbarBody.css">
 	<link rel="stylesheet" type="text/css" href="homepage_CapstoneOne_style.css">
+
+	<!-- Modal Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="styleModalForm.css">
 
 </head>
 <body>
@@ -53,14 +57,18 @@
 					<li class="dropdown navMainLi navLinkGames">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
 						<ul class="dropdown-menu dropDownGameList">
-							<li id="partyGame"><a href="#">Party Board Games</a></li>
-							<li id="stratGame"><a href="#">Strategy Board Games</a></li>
-							<li id="themeGame"><a href="#">Thematic Board Games</a></li>
+							<li id="partyGame"><a href="partyGames_Cap1.html">Party Board Games</a></li>
+							<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
+							<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
 						</ul>
 					</li> <!-- drop down games list -->
 					<li class="navMainLi navLinkAbout"><a href="aboutPage_Cap1.html">About</a></li>
 					<!-- Contact Form Modal Button-->
-					<li class="navMainLi navLinkContact"><a href="javascript:void(0)" id="contactBtn">Contact</a></li>
+					<li class="navMainLi navLinkContact">
+						<!-- Use a link instead of button to keep styles -->
+						<a id="contactBtn" data-toggle="collapse" data-target=".navbar-collapse.in" style="cursor: pointer; color: white;font-weight: bolder;">Contact</a>
+						<!-- Above attributes used to auto-close toggle menu when collapsed -->
+					</li>
 				</ul>
 			</div>
 		</div> <!-- container fluid -->
@@ -71,30 +79,30 @@
 			<!-- Modal Close Button -->
 			<span class="closeForm">&times</span>
 			<!-- Contact Form -->
-			<div class="container">
-				<h4>Want us to add a game?</h4>
-				<form>
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Name">
-					</div> <!-- form-group -->
-					<div class="form-group">
-						<input type="email" class="form-control" placeholder="Email">
-					</div> <!-- form-group -->
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Subject">
-					</div> <!-- form-group -->
-					<div class="form-group">
-						<textarea class="form-control" placeholder="Game Suggestions" rows="7"></textarea>
-					</div> <!-- form-group -->
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-			</div>
+				<div class="container formContainer">
+					<form>
+						<h4 class="text-center">Want us to add a game?<br>Comments or Suggestions?</h4>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Name">
+						</div> <!-- form-group -->
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Email">
+						</div> <!-- form-group -->
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Subject">
+						</div> <!-- form-group -->
+						<div class="form-group">
+							<textarea class="form-control" placeholder="Game Suggestions" rows="7"></textarea>
+						</div> <!-- form-group -->
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
 		</div>
 	</div>
 
 	<!-- Jumbotron Site Slogan -->
 	<div class="container page-header">
-		<div class="jumbotron">
+		<div class="jumbotron" style="color:black">
 			<h2>Can't stomach the overly complicated rules for your new board game?
 			Or you just want to refresh yourself with the rules from a game you haven't played in a while?
 			Then, this site's for you! Browse our collection of game rules,cheatsheets and other helpful information to learn more about board games.</h2>
@@ -153,47 +161,22 @@
 		<div class="container footerContent">
 			<div class="row">
 				<!-- Credits Section; full width on small devices -->
-				<div class="col-md-4 col-xs-12 creditsTxt">
+				<div class="col-md-6 col-xs-12 creditsTxt">
 					<h4>Credits:</h4>
 					<p>Images: All credits for the images belong to the images in BGG (boardgamegeek.com), provided by the image's respective publisher.</p>
 					<p>Content Description: Content Description taken from BGG (boardgamegeek.com).</p>
 					<p>Disclaimer: tl;dr gameRules does not seek to profit from this website and promotes each game with links to bgg and their corresponding publisher.</p>
 				</div>
 				<!-- Contact Form, full width on mobile -->
-				<div class="col-md-4 col-xs-12 text-center" id="contactFormHome">
-					<p class="footerTxt">Let's make Modern Board Games more accessible. More players, less lonely gamers, less dust in our game boxes. :P</p>
+				<div class="col-md-6 col-xs-12 text-center" id="contactFormHome">
+					<p class="footerTxt">Let's make Modern Board Games more accessible.<br> More players, less lonely gamers, less dust in our game boxes. :P</p>
 				</div>
 			</div> <!-- Row -->
 		</div> <!-- footerContent -->
 	</footer>
 
-<script type="text/javascript">
-	// Get the modal
-	var modal = document.getElementById('modalContactForm');
-
-	// Get the button that opens the modal
-	var btn = document.getElementById("contactBtn");
-
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("closeForm")[0];
-
-	// When the user clicks on the button, open the modal 
-	btn.onclick = function() {
-	    modal.style.display = "block";
-	}
-
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-	    modal.style.display = "none";
-	}
-
-	// When the user clicks anywhere outside of the modal, close it
-	document.onclick = function(event) {
-	    if (event.target == modal) {
-	        modal.style.display = "none";
-	    }
-	}
-</script>
+	<!-- Modal Contact Form JS -->
+	<script type="text/javascript" src="modalContactForm.js"></script>
 
 </body>
 </html>
