@@ -17,9 +17,46 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<style type="text/css">
+	#thumbwrap {
+		margin:75px auto;
+	}
+	.thumb {
+		float:left; /* must be floated for same cross browser position of larger image */
+		position:relative;
+		margin:3px;
+	}
+	.thumb img { 
+		border:1px solid #000;
+		vertical-align:bottom;
+	}
+	.thumb:hover {
+		border:0; /* IE6 needs this to show large image */
+		z-index:1;
+	}
+	.thumb p { 
+		position:absolute;
+		visibility:hidden;
+	}
+	.thumb:hover p { 
+		visibility:visible;
+		top:37px; left:37px; 
+	}
+</style>
+
 </head>
 <body>
-
+<div id="thumbwrap">
+<a class="thumb" href="#"><img src="https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/" alt=""><p><img src="https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/56c2a04520c64707756f4267/1493764650017/" alt="">Here's a kit</p></a>
+<a class="thumb" href="#"><img src="images/jamie2.jpg" alt=""><span><img src="images/jamie2big.jpg" alt=""></span></a>
+<a class="thumb" href="#"><img src="images/jamie1.jpg" alt=""><span><img src="images/jamie1big.jpg" alt=""></span></a>
+<a class="thumb" href="#"><img src="images/jamie2.jpg" alt=""><span><img src="images/jamie2big.jpg" alt=""></span></a>
+<a class="thumb" href="#"><img src="images/jamie1.jpg" alt=""><span><img src="images/jamie1big.jpg" alt=""></span></a>
+<a class="thumb" href="#"><img src="images/jamie2.jpg" alt=""><span><img src="images/jamie2big.jpg" alt=""></span></a>
+<a class="thumb" href="#"><img src="images/jamie1.jpg" alt=""><span><img src="images/jamie1big.jpg" alt=""></span></a>
+<a class="thumb" href="#"><img src="images/jamie2.jpg" alt=""><span><img src="images/jamie2big.jpg" alt=""></span></a>
+<a class="thumb" href="#"><img src="images/jamie1.jpg" alt=""><span><img src="images/jamie1big.jpg" alt=""></span></a>
+</div>
 
 </body>
 </html>
