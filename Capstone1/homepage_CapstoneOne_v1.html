@@ -12,15 +12,11 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	</script>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 	<!-- Personal Style Sheets -->
 	<link rel="stylesheet" type="text/css" href="styleNavbarBody.css">
 	<link rel="stylesheet" type="text/css" href="homepage_CapstoneOne_style.css">
+	<!-- siteName Font -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
 	<!-- Modal Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="styleModalForm.css">
@@ -30,17 +26,18 @@
 
 	<!-- Start with a navbar, sticky only for Homepage (Add a mega menu link later for games) -->
 	<!-- Homepage should not have a link to home, add that to the internal pages instead -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">			
 			<!-- Navbar header -->
 			<div class="navbar-header">
 				<!-- Logo image and Website Name -->
 				<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
-					<img src="halfMeeple.png">
+					<img src="leftHalfMeeple.png">
 					<ul class="siteName">
 						<li>tl;dr</li>
 						<li>gameRules</li>
 					</ul>
+					<img src="rightHalfMeeple.png">
 				</div>
 				<!-- Toggle button -->
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
@@ -55,18 +52,18 @@
 				<ul class="nav navbar-nav">
 					<!-- Drop Down Menu for Games List -->
 					<li class="dropdown navMainLi navLinkGames">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle navMainLi" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
 						<ul class="dropdown-menu dropDownGameList">
 							<li id="partyGame"><a href="partyGames_Cap1.html">Party Board Games</a></li>
 							<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
 							<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
 						</ul>
 					</li> <!-- drop down games list -->
-					<li class="navMainLi navLinkAbout"><a href="aboutPage_Cap1.html">About</a></li>
+					<li class="navMainLi navLinkHome"><a href="aboutPage_Cap1.html">About</a></li>
 					<!-- Contact Form Modal Button-->
 					<li class="navMainLi navLinkContact">
 						<!-- Use a link instead of button to keep styles -->
-						<a id="contactBtn" data-toggle="collapse" data-target=".navbar-collapse.in" style="cursor: pointer; color: white;font-weight: bolder;">Contact</a>
+						<a id="contactBtn" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a>
 						<!-- Above attributes used to auto-close toggle menu when collapsed -->
 					</li>
 				</ul>
@@ -101,19 +98,53 @@
 	</div>
 
 	<!-- Jumbotron Site Slogan -->
-	<div class="container page-header">
-		<div class="jumbotron" style="color:black">
-			<h2>Can't stomach the overly complicated rules for your new board game?
-			Or you just want to refresh yourself with the rules from a game you haven't played in a while?
-			Then, this site's for you! Browse our collection of game rules,cheatsheets and other helpful information to learn more about board games.</h2>
+	<div class="container jumboContainer">
+		<div class="jumbotron">
+			<!-- Carousel  -->
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				    <!-- Menu -->
+				    <ol class="carousel-indicators">
+				        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+				        <li data-target="#carousel" data-slide-to="1"></li>
+				        <li data-target="#carousel" data-slide-to="2"></li>
+				    </ol>
+				    
+				    <!-- Items -->
+				    <div class="carousel-inner">
+				        
+				        <div class="item active">
+				      		<img src="mkRule4.jpg" alt="Magic Knight Rules">
+				      		<div class="carousel-caption">
+				      			<h3>Complicated Rules?</h3>
+				      		</div>
+				        </div>
+				        <div class="item">
+				            <img src="https://img.washingtonpost.com/news/local/wp-content/uploads/sites/2/2017/09/sumatran-tiger-5-roshan-patel-smithsonians-national-zoo-1024x682.jpg" alt="cute kit">
+				            <div class="carousel-caption">
+				            	<p>Want a Rules refresher?</p>
+				            </div>
+				        </div>
+				        <div class="item">
+				            <img src="http://cdn.oboxeditions.com/sites/prod/files/styles/gallery/public/article/top-10-cutest-kitten-gif-we-opened-pandoras-box.56091.jpg" alt="cute kit 2">
+				            <div class="carousel-caption">
+				            	<p>Browse our site for Rules links</p>
+				            </div>
+				        </div>
+				    </div> 
+				    <a href="#carousel" class="left carousel-control" data-slide="prev">
+				        <span class="glyphicon glyphicon-chevron-left"></span>
+				    </a>
+				    <a href="#carousel" class="right carousel-control" data-slide="next">
+				        <span class="glyphicon glyphicon-chevron-right"></span>
+				    </a>
+				</div>
 		</div> <!-- jumbotron -->
 	</div>
-
-	<hr style="border-bottom: double black 5px; margin-bottom: 0">
+	<hr class="styledHr2">
 	<!-- Board Game Categories -->
 	<div class="container-fluid categoryAll text-center">
 		<!-- Title -->
-		<div class="row" style="border-bottom: 5px groove black">
+		<div class="row">
 			<div class="col-xs-12">
 				<h1>Board Game Categories</h1>
 			</div>
@@ -126,20 +157,20 @@
 					<img src="https://cf.geekdo-images.com/images/pic2582929_md.jpg" alt="Codenames: Number 1 Party Game on BGG">
 					<div class="caption">
 						<h3>PARTY GAMES</h3>
-						<p>Games that encourage social interaction. They generally have easy setups and simple rules, and they can accommodate large groups of people and play in a short amount of time.</p>
+						<p class="categoryTxt">Games that encourage social interaction. They generally have easy setups and simple rules, and they can accommodate large groups of people and play in a short amount of time.</p>
 					</div> <!-- caption -->
 					<a href="partyGames_Cap1.html" class="btn btn-primary" role="button">Browse here</a>
 				</div> <!-- thumbnail -->
 			</div>		
 			<!-- Thematic Games -->
-			<div class="col-md-4 col-xs-12 category">
+			<div class="col-md-4 col-xs-12 category midCategory">
 				<div class="thumbnail">
 					<img src="https://cf.geekdo-images.com/images/pic2663291_md.jpg" alt="Through the Ages: A New Story of Civilization">
 					<div class="caption">
 						<h3>STRATEGY GAMES</h3>
-						<p>Games in which the players' decision-making skills have a high significance in determining the outcome. These include abstract games, with artificial rules and little or no theme, and simulations (including wargames), with rules designed to emulate and reproduce a real or fictional scenario.</p>
-						<a href="stratGames_Cap1.html" class="btn btn-primary" role="button">Browse here</a>
+						<p class="categoryTxt">Games in which the players' decision-making skills have a high significance in determining the outcome. These include abstract games, with artificial rules and little or no theme, and simulations (including wargames), with rules designed to emulate and reproduce a real or fictional scenario.</p>
 					</div> <!-- caption -->
+					<a href="stratGames_Cap1.html" class="btn btn-primary" role="button">Browse here</a>
 				</div> <!-- thumbnail -->
 			</div>			
 			<!-- Strategy Games -->
@@ -148,14 +179,14 @@
 					<img src="https://cf.geekdo-images.com/images/pic2437871_md.jpg" alt="Gloomhaven: Overall Number 1 on BGG (Feb 2018)">
 					<div class="caption">
 						<h3>THEMATIC GAMES</h3>
-						<p>Thematic Games contain a strong theme which drives the overall game experience, creating a dramatic story ("narrative") similar to a book or action movie. These games are usually created around its main dramatic theme, which its rules and mechanics aim to depict. Themes typically involve fighting or good-versus-evil conflicts with heroes and villains.</p>
-						<p><a href="themeGames_Cap1.html" class="btn btn-primary" role="button">Browse here</a></p>
+						<p class="categoryTxt">Thematic Games contain a strong theme which drives the overall game experience, creating a dramatic story ("narrative") similar to a book or action movie. These games are usually created around its main dramatic theme, which its rules and mechanics aim to depict. Themes typically involve fighting or good-versus-evil conflicts with heroes and villains.</p>
 					</div> <!-- caption -->
+					<a href="themeGames_Cap1.html" class="btn btn-primary" role="button">Browse here</a>
 				</div> <!-- thumbnail -->
 			</div>
 		</div> <!-- category row -->
 	</div> <!-- container-fluid -->
-	<hr style="border-bottom: double black 5px; margin: 0">
+	<hr class="styledHr2">
 	<!-- Footer: Mission Statement-->
 	<footer class="text-center">
 		<div class="container footerContent">
@@ -177,6 +208,8 @@
 
 	<!-- Modal Contact Form JS -->
 	<script type="text/javascript" src="modalContactForm.js"></script>
-
+	<!-- Jquery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

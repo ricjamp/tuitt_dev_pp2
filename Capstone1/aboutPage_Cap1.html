@@ -12,12 +12,6 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	</script>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 	<style type="text/css">
 
 		.aboutSite {
@@ -28,6 +22,8 @@
 
 	<!-- Personal Style Sheets -->
 	<link rel="stylesheet" type="text/css" href="styleNavbarBody.css">
+	<!-- siteName Font -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
 	<!-- Modal Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="styleModalForm.css">
@@ -35,49 +31,49 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">			
-			<!-- Navbar header -->
-			<div class="navbar-header">
-				<!-- Logo image and Website Name -->
-				<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
-					<img src="halfMeeple.png">
-					<ul class="siteName">
-						<li>tl;dr</li>
-						<li>gameRules</li>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">			
+				<!-- Navbar header -->
+				<div class="navbar-header">
+					<!-- Logo image and Website Name -->
+					<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
+						<img src="leftHalfMeeple.png">
+						<ul class="siteName">
+							<li>tl;dr</li>
+							<li>gameRules</li>
+						</ul>
+						<img src="rightHalfMeeple.png">
+					</div>
+					<!-- Toggle button -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+			  	        <span class="icon-bar"></span>
+			  	        <span class="icon-bar"></span>				
+					</button>
+				</div> <!-- navbar header -->
+				<!-- Collapsible Menu -->
+				<div class="collapse navbar-collapse navbar-right" id="navMenuLinks">
+					<ul class="nav navbar-nav">
+						<!-- Drop Down Menu for Games List -->
+						<li class="dropdown navMainLi navLinkGames">
+							<a href="#" class="dropdown-toggle navMainLi" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
+							<ul class="dropdown-menu dropDownGameList">
+								<li id="partyGame"><a href="partyGames_Cap1.html">Party Board Games</a></li>
+								<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
+								<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
+							</ul>
+						</li> <!-- drop down games list -->
+						<li class="navMainLi navLinkAbout"><a href="homepage_CapstoneOne_v1.html">Home</a></li>
+						<!-- Contact Form Modal Button-->
+						<li class="navMainLi navLinkContact">
+							<!-- Use a link instead of button to keep styles -->
+							<a id="contactBtn" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a>
+							<!-- Above attributes used to auto-close toggle menu when collapsed -->
+						</li>
 					</ul>
 				</div>
-				<!-- Toggle button -->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-		  	        <span class="icon-bar"></span>
-		  	        <span class="icon-bar"></span>
-		  	        <span class="icon-bar"></span>					
-				</button>
-			</div> <!-- navbar header -->
-			<!-- Collapsible Menu -->
-			<div class="collapse navbar-collapse navbar-right" id="navMenuLinks">
-				<ul class="nav navbar-nav">
-					<!-- Drop Down Menu for Games List -->
-					<li class="dropdown navMainLi navLinkGames">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
-						<ul class="dropdown-menu dropDownGameList">
-							<li id="partyGame"><a href="partyGames_Cap1.html">Party Board Games</a></li>
-							<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
-							<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
-						</ul>
-					</li> <!-- drop down games list -->
-					<li class="navMainLi navLinkHome"><a href="homepage_CapstoneOne_v1.html">Home</a></li>
-					<!-- Contact Form Modal Button-->
-					<li class="navMainLi navLinkContact">
-						<!-- Use a link instead of button to keep styles -->
-						<a id="contactBtn" data-toggle="collapse" data-target=".navbar-collapse.in" style="cursor: pointer; color: white;font-weight: bolder;">Contact</a>
-						<!-- Above attributes used to auto-close toggle menu when collapsed -->
-					</li>
-				</ul>
-			</div>
-		</div> <!-- container fluid -->
-	</nav> 
+			</div> <!-- container fluid -->
+		</nav> 
 
 	<!-- Modal Contact Form, thank you w3schools -->
 	<div id="modalContactForm" class="modal">
@@ -106,15 +102,18 @@
 		</div>
 	</div>
 
-	<div class="container text-center">
+	<div class="container text-center aboutSite">
 		<h1>About this Site</h1>
 		<p>This site was made to comply with Tuitt Coding Bootcamp's Capstone 1 Requirements.</p>
 		<p>I'll probably use this as a template for making an app on android. Someday.</p>
 		<p style="font-size: 10px;">P.S. <br> It was also made as a selfish project to have my board games' rules on-hand at all times.</p>
 	</div>
 
-<!-- Modal Contact Form JS -->
-<script type="text/javascript" src="modalContactForm.js"></script>
+	<!-- Jquery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Modal Contact Form JS -->
+	<script type="text/javascript" src="modalContactForm.js"></script>
 
 </body>
 </html>

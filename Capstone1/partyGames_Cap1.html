@@ -12,12 +12,6 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	</script>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 	<!-- Personal Style Sheets -->
 	<link rel="stylesheet" type="text/css" href="styleNavbarBody.css">
 
@@ -27,51 +21,69 @@
 	<!-- Go To Top Button Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="style_toTop.css">
 
+	<style type="text/css">
+
+		body {
+			background: url(http://eskipaper.com/images/party-night-1.jpg) no-repeat;
+			background-size: 100%;
+		}
+
+		.partyHeader {
+			background-color: black; 
+			color: white;
+			padding: 15px;
+			display: inline-block;
+		}
+
+	</style>
+
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">			
-			<!-- Navbar header -->
-			<div class="navbar-header">
-				<!-- Logo image and Website Name -->
-				<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
-					<img src="halfMeeple.png">
-					<ul class="siteName">
-						<li>tl;dr</li>
-						<li>gameRules</li>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">			
+				<!-- Navbar header -->
+				<div class="navbar-header">
+					<!-- Logo image and Website Name -->
+					<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
+						<img src="leftHalfMeeple.png">
+						<ul class="siteName">
+							<li>tl;dr</li>
+							<li>gameRules</li>
+						</ul>
+						<img src="rightHalfMeeple.png">
+					</div>
+					<!-- Toggle button -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+			  	        <span class="icon-bar"></span>
+			  	        <span class="icon-bar"></span>
+			  	        <span class="icon-bar"></span>					
+					</button>
+				</div> <!-- navbar header -->
+				<!-- Collapsible Menu -->
+				<div class="collapse navbar-collapse navbar-right" id="navMenuLinks">
+					<ul class="nav navbar-nav">
+						<!-- Drop Down Menu for Games List -->
+						<li class="dropdown navMainLi navLinkGames">
+							<a href="#" class="dropdown-toggle navMainLi" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
+							<ul class="dropdown-menu dropDownGameList">
+								<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
+								<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
+							</ul>
+						</li> <!-- drop down games list -->
+						<li class="navMainLi navLinkHome"><a href="aboutPage_Cap1.html">Home</a></li>
+						<li class="navMainLi navLinkAbout"><a href="aboutPage_Cap1.html">About</a></li>
+						<!-- Contact Form Modal Button-->
+						<li class="navMainLi navLinkContact">
+							<!-- Use a link instead of button to keep styles -->
+							<a id="contactBtn" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a>
+							<!-- Above attributes used to auto-close toggle menu when collapsed -->
+						</li>
 					</ul>
 				</div>
-				<!-- Toggle button -->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-		  	        <span class="icon-bar"></span>
-		  	        <span class="icon-bar"></span>
-		  	        <span class="icon-bar"></span>					
-				</button>
-			</div> <!-- navbar header -->
-			<!-- Collapsible Menu -->
-			<div class="collapse navbar-collapse navbar-right" id="navMenuLinks">
-				<ul class="nav navbar-nav">
-					<!-- Drop Down Menu for Games List -->
-					<li class="dropdown navMainLi navLinkGames">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
-						<ul class="dropdown-menu dropDownGameList">
-							<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
-							<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
-						</ul>
-					</li> <!-- drop down games list -->
-					<li class="navMainLi navLinkHome"><a href="homepage_CapstoneOne_v1.html">Home</a></li>
-					<!-- Contact Form Modal Button-->
-					<li class="navMainLi navLinkContact">
-						<!-- Use a link instead of button to keep styles -->
-						<a id="contactBtn" data-toggle="collapse" data-target=".navbar-collapse.in" style="cursor: pointer; color: white;font-weight: bolder;">Contact</a>
-						<!-- Above attributes used to auto-close toggle menu when collapsed -->
-					</li>
-				</ul>
-			</div>
-		</div> <!-- container fluid -->
-	</nav>
+			</div> <!-- container fluid -->
+		</nav> 
 	<!-- Modal Contact Form, thank you w3schools -->
 	<div id="modalContactForm" class="modal">
 		<div class="modal-content">
@@ -99,22 +111,18 @@
 		</div>
 	</div> 
 
-	<p>Scratch at the door then walk away hack
-Pet my belly, you know you want to; seize the hand and shred it! peer out window, chatter at birds, lure them to mouth for decide to want nothing to do with my owner today i'm going to lap some water out of my master's cup meow so hide from vacuum cleaner for human is washing you why halp oh the horror flee scratch hiss bite. Roll on the floor purring your whiskers off asdflkjaertvlkjasntvkjn (sits on keyboard) attack the dog then pretend like nothing happened. Cat dog hate mouse eat string barf pillow no baths hate everything lay on arms while you're using the keyboard or chase imaginary bugs, and cats secretly make all the worlds muffins adventure always for while happily ignoring when being called. Chase after silly colored fish toys around the house stare at wall turn and meow stare at wall some more meow again continue staring so damn that dog claw drapes meowwww. Shove bum in owner's face like camera lens. I'm going to lap some water out of my master's cup meow. Step on your keyboard while you're gaming and then turn in a circle throwup on your pillow. Climb a tree, wait for a fireman jump to fireman then scratch his face kitty kitty eat a plant, kill a hand but cats secretly make all the worlds muffins, for pee in human's bed until he cleans the litter box but brown cats with pink ears. Sleep nap cereal boxes make for five star accommodation pushes butt to face for love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater). Relentlessly pursues moth refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am. Pounce on unsuspecting person i can haz fall asleep on the washing machine howl on top of tall thing. Flee in terror at cucumber discovered on floor sleep nap human is washing you why halp oh the horror flee scratch hiss bite and chase dog then run away so poop in litter box, scratch the walls. Kitty poochy. Milk the cow missing until dinner time, yet lick the curtain just to be annoying for scratch leg; meow for can opener to feed me, but claw at curtains stretch and yawn nibble on tuna ignore human bite human hand. Hide at bottom of staircase to trip human sweet beast. Woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now. 
-
-Hiss and stare at nothing then run suddenly away kitty kitty use lap as chair, demand to be let outside at once, and expect owner to wait for me as i think about it, or find a way to fit in tiny box and groom forever, stretch tongue and leave it slightly out, blep. Gnaw the corn cob sniff all the things. Give attitude burrow under covers, and under the bed. Scamper ignore the squirrels, you'll never catch them anyway, small kitty warm kitty little balls of fur for woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now and chirp at birds but inspect anything brought into the house lick sellotape. Leave dead animals as gifts jump off balcony, onto stranger's head slap owner's face at 5am until human fills food dish refuse to leave cardboard box. Flex claws on the human's belly and purr like a lawnmower sit and stare hack i love cuddles for hunt anything that moves stare at guinea pigs so eat too much then proceed to regurgitate all over living room carpet while humans eat dinner. Instantly break out into full speed gallop across the house for no reason. I just saw other cats inside the house and nobody ask me before using my litter box playing with balls of wool. Howl uncontrollably for no reason. While happily ignoring when being called make meme, make cute face. 
-
-Kitty loves pigs. Fall over dead (not really but gets sypathy) i am the best yet somehow manage to catch a bird but have no idea what to do next, so play with it until it dies of shock but chase laser so sit in box scream at teh bath yet make meme, make cute face. Meowwww love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) and swat turds around the house for thug cat so sleep in the bathroom sink or attempt to leap between furniture but woefully miscalibrate and bellyflop onto the floor; what's your problem? i meant to do that now i shall wash myself intently. Damn that dog catch mouse and gave it as a present but cat is love, cat is life. Woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now lick the other cats. Roll on the floor purring your whiskers off steal the warm chair right after you get up yet plan steps for world domination eat from dog's food. Lie in the sink all day sleep in the bathroom sink small kitty warm kitty little balls of fur for hopped up on catnip. 
-
-Immediately regret falling into bathtub chase ball of string, for leave hair everywhere your pillow is now my pet bed, chase imaginary bugs. More napping, more napping all the napping is exhausting destroy couch as revenge play time i'm bored inside, let me out i'm lonely outside, let me in i can't make up my mind whether to go in or out, guess i'll just stand partway in and partway out, contemplating the universe for half an hour how dare you nudge me with your foot?!?! leap into the air in greatest offense! cat snacks. Knock dish off table head butt cant eat out of my own dish pushes butt to face yet pushes butt to face. Always hungry meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat so instantly break out into full speed gallop across the house for no reason demand to have some of whatever the human is cooking, then sniff the offering and walk away pee in the shoe for prance along on top of the garden fence, annoy the neighbor's dog and make it bark. Eat grass, throw it back up curl into a furry donut hide from vacuum cleaner head nudges . Freak human out make funny noise mow mow mow mow mow mow success now attack human all of a sudden cat goes crazy. Purr while eating shake treat bag curl into a furry donut present belly, scratch hand when stroked, yet eat half my food and ask for more. Suddenly go on wild-eyed crazy rampage and sometimes switches in french and say "miaou" just because well why not lick arm hair. Pose purrfectly to show my beauty. Scratch me there, elevator butt stare at ceiling light. Cat is love, cat is life chew iPad power cord. Purr find something else more interesting, so try to jump onto window and fall while scratching at wall so shake treat bag. Terrorize the hundred-and-twenty-pound rottweiler and steal his bed, not sorry rub face on everything flop over purrrrrr. Eat all the power cords kitty power so curl up and sleep on the freshly laundered towels shake treat bag, but small kitty warm kitty little balls of fur for my slave human didn't give me any food so i pooped on the floor, roll over and sun my belly. Pushes butt to face. Immediately regret falling into bathtub curl up and sleep on the freshly laundered towels for cat not kitten around cat snacks, or reward the chosen human with a slow blink yet destroy couch lie in the sink all day. Poop in litter box, scratch the walls friends are not food or chase after silly colored fish toys around the house. Cat fur is the new black why must they do that gnaw the corn cob, or stare at ceiling light yet sit by the fire and pee in human's bed until he cleans the litter box so somehow manage to catch a bird but have no idea what to do next, so play with it until it dies of shock. Kick up litter sleep sleep on my human's head or a nice warm laptop for me to sit on. Pee in the shoe sleep on keyboard, but cough hairball on conveniently placed pants, lick plastic bags wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again so purr. Bleghbleghvomit my furball really tie the room together meow loudly just to annoy owners, and you have cat to be kitten me right meow and poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls so swat at dog, but destroy couch, for meow loudly just to annoy owners. Hiss at vacuum cleaner burrow under covers eat all the power cords so mew, pelt around the house and up and down stairs chasing phantoms step on your keyboard while you're gaming and then turn in a circle . Eats owners hair then claws head. Flee in terror at cucumber discovered on floor refuse to come home when humans are going to bed; stay out all night then yowl like i am dying at 4am present belly, scratch hand when stroked yet scratch the furniture fooled again thinking the dog likes me weigh eight pounds but take up a full-size bed, or cat slap dog in face. 
-
-Chase mice find empty spot in cupboard and sleep all day. Purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table pooping rainbow while flying in a toasted bread costume in space human give me attention meow, hide when guests come over, yet meow but i just saw other cats inside the house and nobody ask me before using my litter box. Under the bed mice. Present belly, scratch hand when stroked. Small kitty warm kitty little balls of fur chase ball of string but hiding behind the couch until lured out by a feathery toy cats are fats i like to pets them they like to meow back but mice. Asdflkjaertvlkjasntvkjn (sits on keyboard) scream for no reason at 4 am my left donut is missing, as is my right intently stare at the same spot, so mark territory, but push your water glass on the floor. Soft kitty warm kitty little ball of furr dead stare with ears cocked intently sniff hand, for howl uncontrollably for no reason. Purr hunt by meowing loudly at 5am next to human slave food dispenser or you have cat to be kitten me right meow flee in terror at cucumber discovered on floor cat ass trophy shove bum in owner's face like camera lens. Suddenly go on wild-eyed crazy rampage meow meow, i tell my human, but nap all day, but mrow chase imaginary bugs if human is on laptop sit on the keyboard or scratch the box. Ignore the human until she needs to get up, then climb on her lap and sprawl pose purrfectly to show my beauty dont wait for the storm to pass, dance in the rain, and have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat hopped up on catnip. Hiss at vacuum cleaner human give me attention meow or munch on tasty moths lick plastic bags. Has closed eyes but still sees you touch water with paw then recoil in horror yet terrorize the hundred-and-twenty-pound rottweiler and steal his bed, not sorry see owner, run in terror mrow. Suddenly go on wild-eyed crazy rampage hopped up on catnip. Sit on the laptop love to play with owner's hair tie. Ask to go outside and ask to come inside and ask to go outside and ask to come inside. I like cats because they are fat and fluffy fight an alligator and win. Rub face on everything lie on your belly and purr when you are asleep. Small kitty warm kitty little balls of fur the dog smells bad. Cat cat moo moo lick ears lick paws eat from dog's food. Refuse to drink water except out of someone's glass. Try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard demand to be let outside at once, and expect owner to wait for me as i think about it and purr for no reason mesmerizing birds, or sleep and poop in the plant pot. </p>
-
+	<div class="container text-center">
+		<h1 class="partyHeader">Party Games</h1>
+	</div>
+	
 	<a href="#" class="go-top">Go Top</a>
 
+	<!-- Jquery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- Modal Contact Form JS -->
 	<script type="text/javascript" src="modalContactForm.js"></script>
-
+	<!-- Go to top JS -->
 	<script type="text/javascript" src="toTop.js"></script>
 
 </body>

@@ -1,26 +1,61 @@
+.jumboContainer {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .page-header {
 	border-bottom: none; /*Removed bootstrap border bottom*/
 }
 
+.jumbotron {
+	margin-bottom: 0;
+}
+
+.carousel img {
+	max-height: 350px;
+	margin: 0 auto;
+}
+
+.carousel-caption {
+	position: relative;
+}
+
+.carousel-caption {
+	position: absolute;
+	bottom: 20%;
+}
+
 .categoryAll {
-	background-color: orange;
+	background-color: #4A4E51;
 	color: white;
 }
 
 .category {
-	border: 2px black solid;
-	height: 700px;
+	height: 600px;
 }
 
 .category>.thumbnail {
 	margin: 30px 20px;
 	padding-top: 30px;
-	height: 630px;
+	height: 530px;
 	position: relative;
+	background-color: #4A4E51;
+	border: 2px solid white;
+}
+.category>.thumbnail>.caption {
+	color: white;
+}
+
+.caption>h3 {
+	border-bottom: 1px solid white;
 }
 
 .category>.thumbnail>img {
-	height: 240px; Found out to be best image height to avoid stretching
+	height: 240px; /*Found out to be best image height to avoid stretching*/
+}
+
+.categoryTxt {
+	font-size: 12px;
 }
 
 .category>.thumbnail .btn {
@@ -30,8 +65,15 @@
 	right: 0;
 }
 
+.category>.thumbnail>.btn-primary {
+	background-color: #11114E;
+	background-image: none;
+}
+
 footer {
 	color: white;
+	background-color: #222;
+	background-image: linear-gradient(to bottom, #3C3C3C 0px, #222 100%);
 }
 
 .footerContent {
