@@ -23,16 +23,58 @@
 
 	<style type="text/css">
 
-		body {
-			background: url(http://eskipaper.com/images/party-night-1.jpg) no-repeat;
-			background-size: 100%;
+		html, body {
+			width: 100%;
+			height: 100%;
+			color: white;
+		}
+
+		.pageBG {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background: url(http://eskipaper.com/images/party-night-1.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
 		}
 
 		.partyHeader {
-			background-color: black; 
+			background-color: black;
 			color: white;
+			margin-top: 50px;
 			padding: 15px;
 			display: inline-block;
+			border: 1px solid white;
+		}
+
+		.gameChoice {
+			border: 1px solid white;
+			background-color: black;
+		}
+
+		.gameChoice img {
+			margin: 15px;
+			max-height: 200px;
+			max-width: 300px;
+		}
+
+		.gameInfo {
+			text-align:left; 
+			padding:15px;
+		}
+
+		.gameInfo>.media-heading>small>a {
+			text-decoration: underline;
+			text-decoration-color: white;
+		}
+
+		.btn-default {
+			background-color: #11114E;
+			background-image: none;
+			color: white;
+			border-color: white;
 		}
 
 	</style>
@@ -72,7 +114,7 @@
 								<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
 							</ul>
 						</li> <!-- drop down games list -->
-						<li class="navMainLi navLinkHome"><a href="aboutPage_Cap1.html">Home</a></li>
+						<li class="navMainLi navLinkHome"><a href="homepage_CapstoneOne_v1.html">Home</a></li>
 						<li class="navMainLi navLinkAbout"><a href="aboutPage_Cap1.html">About</a></li>
 						<!-- Contact Form Modal Button-->
 						<li class="navMainLi navLinkContact">
@@ -110,9 +152,35 @@
 				</div>
 		</div>
 	</div> 
-
-	<div class="container text-center">
-		<h1 class="partyHeader">Party Games</h1>
+	<div class="pageBG">	
+		<div class="container text-center">
+			<h1 class="partyHeader">Party Games</h1>
+			<br><br>
+				<div class="media gameChoice">
+					<div class="media-left media-middle">
+						<!-- Add link to image later -->
+						<a href="#">
+							<img src="https://cf.geekdo-images.com/images/pic2582929_md.jpg">
+						</a>
+					</div>
+					<div class="media-body gameInfo">
+						<h4 class="media-heading">
+						Codenames
+							<br>
+							<small>2-8 Players: Best with 6 & 8
+							<br>
+							<a href="https://boardgamegeek.com/boardgame/178900/codenames">BGG Link</a>
+							<br>
+							<a href="https://czechgames.com/en/codenames/">Publisher: CGE</a>
+							</small>
+						</h4>
+						<p>Two rival spymasters know the secret identities of 25 agents. Their teammates know the agents only by their CODENAMES.</p>
+						<p>In Codenames, two teams compete to see who can make contact with all of their agents first. Spymasters give one-word clues that can point to multiple words on the board. Their teammates try to guess words of the right color while avoiding those that belong to the opposing team. And everyone wants to avoid the assassin.</p>
+						<p>Codenames: Win or lose, it's fun to figure out the clues.</p>
+						<a href="#" class="btn btn-default" role="button">Rules</a>
+					</div>
+				</div>
+		</div>
 	</div>
 	
 	<a href="#" class="go-top">Go Top</a>
