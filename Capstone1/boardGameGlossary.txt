@@ -1,0 +1,45 @@
+17	Meeple
+14	Dice
+10	Analysis Paralysis
+15 	Victory Points
+9	Ameritrash
+9	Euro
+8	Cooperative
+8	Traitor
+8	Bluff
+7	Action selection
+6	Deck Building
+5	Backstabbing
+9	Dice Rolls
+8	Auction
+8	Bidding
+8	CCG
+8	LCG
+8	dudes on a map
+7	expansion
+7	family game
+7	Filler
+7	gateway games
+7	board game geek
+7	heavyweight
+7	lightweight
+7	legacy
+7	meaty
+7	economy
+7	miniatures
+7	solo
+7	negotiation
+7	Risk
+6	strategy
+6	Diplomacy
+6	player interaction
+6	movement
+6	press your luck
+6	replay value
+6	rules lawyer
+6	scenario
+6	Tiles
+6	Trick-taking
+6	turtling
+6	variant
+6	victory conditions

@@ -1,6 +1,10 @@
 body {
 	padding-top: 50px;
-	background-color: black;
+	background: url(http://devfloat.net/wp-content/uploads/2016/01/Board-Game-Pattern.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	font-family: "Arial";
 }
 
@@ -48,6 +52,27 @@ h1,h2,h3,h4,h5,h6 {
 	background-color: black;
 }
 
+@media (max-width: 767px) {
+	#navMenuLinks {
+		margin-left: 60px;
+		margin-right: 0;
+		font-family: "Rubik";
+		text-align: center;
+	}
+
+	.navbar-nav>.navLinkGames {
+		text-align: left;
+	}
+
+	.navbar-nav>.navLinkGames>.dropDownGameList {
+		background-color: white;
+		text-align: center;
+	}
+	#partyGame>a, #stratGame>a, #themeGame>a {
+	    color: white;
+	}
+}
+
 #partyGame, #stratGame {
 	border-bottom: 5px solid white;
 }
@@ -76,16 +101,37 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
 }
 
+footer {
+	color: white;
+	background-color: #222;
+	background-image: linear-gradient(to bottom, #3C3C3C 0px, #222 100%);
+}
+
+.footerContent {
+	text-align: left;
+}
+
+.creditsTxt {
+	font-size: 12px;
+}
+
+.footerTxt {
+	margin-top: 15px;
+	padding: 10px 20px 10px 20px;
+	font-size: 12px;
+	font-style: italic;
+}
+
 .styledHr2 {
     border: 0;
     margin: 0;
     height: 4px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
 }
 
 .styledHrWhite {
     border: 0;
     margin: 0;
     height: 4px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1));
 }

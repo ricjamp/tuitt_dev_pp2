@@ -18,6 +18,20 @@
 			color: white;
 		}
 
+		.aboutSiteHead {
+			display: inline-block;
+			background-color: black; 
+			border: 1px solid white;
+			font-size: 3em;
+		}
+
+		.aboutSiteTxt {
+			display: inline-block;
+			background-color: black; 
+			border: 1px solid white;
+			padding: 5px;
+		}
+
 	</style>
 
 	<!-- Personal Style Sheets -->
@@ -37,12 +51,12 @@
 				<div class="navbar-header">
 					<!-- Logo image and Website Name -->
 					<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
-						<img src="leftHalfMeeple.png">
+						<img src="images/leftHalfMeeple.png">
 						<ul class="siteName">
 							<li>tl;dr</li>
 							<li>gameRules</li>
 						</ul>
-						<img src="rightHalfMeeple.png">
+						<img src="images/rightHalfMeeple.png">
 					</div>
 					<!-- Toggle button -->
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
@@ -103,10 +117,46 @@
 	</div>
 
 	<div class="container text-center aboutSite">
-		<h1>About this Site</h1>
-		<p>This site was made to comply with Tuitt Coding Bootcamp's Capstone 1 Requirements.</p>
-		<p>I'll probably use this as a template for making an app on android. Someday.</p>
-		<p style="font-size: 10px;">P.S. <br> It was also made as a selfish project to have my board games' rules on-hand at all times.</p>
+		<h2 class="aboutSiteHead">About this Site</h2>
+		<div class="container">	
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="aboutSiteTxt">This site was made to comply with Tuitt Coding Bootcamp's Capstone 1 Requirements.</p>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="aboutSiteTxt">I'll probably use this as a template for making an app on android. Someday.</p>	
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="aboutSiteTxt" style="font-size: 10px;">P.S. <br> It was also made as a selfish project to have my board games' rules on-hand at all times.</p>	
+				</div>
+			</div>
+		</div>
+		<h2 class="aboutSiteHead">Credits</h2>
+		<div class="container">	
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<p class="aboutSiteTxt">Board Game Images: All credits for the images belong to the images in BGG (boardgamegeek.com), provided by the image's respective publisher.</p>	
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<p class="aboutSiteTxt">Other Images: Credits to Alexander Andrews on Unsplash for the cat picture.</p>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="aboutSiteTxt">Content Description: Content Description  from BGG (boardgamegeek.com).</p>	
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="aboutSiteTxt">Disclaimer: tl;dr gameRules does not seek to profit from this website and promotes each game with links to bgg and their corresponding publisher.</p>	
+				</div>
+			</div>	
+		</div>
+
 	</div>
 
 	<!-- Jquery and Bootstrap JS -->

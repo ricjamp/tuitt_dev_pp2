@@ -21,6 +21,25 @@
 	<!-- Go To Top Button Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="style_toTop.css">
 
+	<style type="text/css">
+
+		html, body {
+			background: none;
+		}
+
+		.leftBg {
+			height: 1000px;
+			background: url("images/femaleSpy.png") no-repeat;
+			background-size: 100% 100%;
+		}
+		.rightBg {
+			height: 1000px;
+			background: url("images/maleSpy2.png") no-repeat;
+			background-size: 100% 100%;
+		}
+
+	</style>
+
 </head>
 <body>
 
@@ -30,12 +49,12 @@
 				<div class="navbar-header">
 					<!-- Logo image and Website Name -->
 					<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
-						<img src="leftHalfMeeple.png">
+						<img src="images/leftHalfMeeple.png">
 						<ul class="siteName">
 							<li>tl;dr</li>
 							<li>gameRules</li>
 						</ul>
-						<img src="rightHalfMeeple.png">
+						<img src="images/rightHalfMeeple.png">
 					</div>
 					<!-- Toggle button -->
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
@@ -93,38 +112,24 @@
 					</form>
 				</div>
 		</div>
-	</div> 
-	<div class="pageBG">	
-		<div class="container text-center">
-			<h1 class="partyHeader">Party Games</h1>
-			<br><br>
-				<div class="media gameChoice">
-					<div class="media-left media-middle">
-						<!-- Add link to image later -->
-						<a href="#">
-							<img src="https://cf.geekdo-images.com/images/pic2582929_md.jpg">
-						</a>
-					</div>
-					<div class="media-body gameInfo">
-						<h4 class="media-heading">
-						Codenames
-							<br>
-							<small>2-8 Players: Best with 6 & 8
-							<br>
-							<a href="https://boardgamegeek.com/boardgame/178900/codenames">BGG Link</a>
-							<br>
-							<a href="https://czechgames.com/en/codenames/">Publisher: CGE</a>
-							</small>
-						</h4>
-						<p>Two rival spymasters know the secret identities of 25 agents. Their teammates know the agents only by their CODENAMES.</p>
-						<p>In Codenames, two teams compete to see who can make contact with all of their agents first. Spymasters give one-word clues that can point to multiple words on the board. Their teammates try to guess words of the right color while avoiding those that belong to the opposing team. And everyone wants to avoid the assassin.</p>
-						<p>Codenames: Win or lose, it's fun to figure out the clues.</p>
-						<a href="#" class="btn btn-default" role="button">Rules</a>
-					</div>
-				</div>
-		</div>
 	</div>
 	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="leftBg col-sm-2 col-xs-6">
+			</div>
+			<div class="rightBg col-sm-2 col-xs-6 col-sm-push-8">
+			</div>
+			<div class="col-sm-8 col-sm-pull-2 col-xs-12">
+				<div class="page-header text-center	">
+					<h1>Codenames</h1>					
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
 	<a href="#" class="go-top">Go Top</a>
 
 	<!-- Jquery and Bootstrap JS -->

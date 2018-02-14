@@ -9,20 +9,38 @@
 
 .jumbotron {
 	margin-bottom: 0;
+	background-color: black;
 }
 
-.carousel img {
-	max-height: 350px;
+.carousel-inner {
+	background-color: white;
+}
+
+#carouselSlides {
+	height: 550px;
 	margin: 0 auto;
 }
 
-.carousel-caption {
-	position: relative;
+@media (max-width: 767px) {
+	#carouselSlides {
+		height: 200px;
+		margin: 0 auto;
+	}
+
+	.carousel-caption>h3 {
+		font-size: 16px;
+	}
 }
 
 .carousel-caption {
 	position: absolute;
 	bottom: 20%;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+	padding: 0;
+}
+
+.carousel-control {
+	color: black;
 }
 
 .categoryAll {
@@ -68,25 +86,4 @@
 .category>.thumbnail>.btn-primary {
 	background-color: #11114E;
 	background-image: none;
-}
-
-footer {
-	color: white;
-	background-color: #222;
-	background-image: linear-gradient(to bottom, #3C3C3C 0px, #222 100%);
-}
-
-.footerContent {
-	text-align: left;
-}
-
-.creditsTxt {
-	font-size: 12px;
-}
-
-.footerTxt {
-	margin-top: 15px;
-	padding: 10px 20px 10px 20px;
-	font-size: 12px;
-	font-style: italic;
 }

@@ -32,12 +32,12 @@
 			<div class="navbar-header">
 				<!-- Logo image and Website Name -->
 				<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
-					<img src="leftHalfMeeple.png">
+					<img src="images/leftHalfMeeple.png">
 					<ul class="siteName">
 						<li>tl;dr</li>
 						<li>gameRules</li>
 					</ul>
-					<img src="rightHalfMeeple.png">
+					<img src="images/rightHalfMeeple.png">
 				</div>
 				<!-- Toggle button -->
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
@@ -59,7 +59,7 @@
 							<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
 						</ul>
 					</li> <!-- drop down games list -->
-					<li class="navMainLi navLinkHome"><a href="aboutPage_Cap1.html">About</a></li>
+					<li class="navMainLi navLinkAbout"><a href="aboutPage_Cap1.html">About</a></li>
 					<!-- Contact Form Modal Button-->
 					<li class="navMainLi navLinkContact">
 						<!-- Use a link instead of button to keep styles -->
@@ -100,6 +100,7 @@
 	<!-- Jumbotron Site Slogan -->
 	<div class="container jumboContainer">
 		<div class="jumbotron">
+			<div class="container-fluid">
 			<!-- Carousel  -->
 			<div id="carousel" class="carousel slide" data-ride="carousel">
 				    <!-- Menu -->
@@ -113,21 +114,21 @@
 				    <div class="carousel-inner">
 				        
 				        <div class="item active">
-				      		<img src="mkRule4.jpg" alt="Magic Knight Rules">
+				      		<img id="carouselSlides" src="images/1stSlide_rulesCover.png" alt="Mixed Rule Book Covers">
 				      		<div class="carousel-caption">
 				      			<h3>Complicated Rules?</h3>
 				      		</div>
 				        </div>
 				        <div class="item">
-				            <img src="https://img.washingtonpost.com/news/local/wp-content/uploads/sites/2/2017/09/sumatran-tiger-5-roshan-patel-smithsonians-national-zoo-1024x682.jpg" alt="cute kit">
+				            <img id="carouselSlides" src="images/2ndSlide_wordCloud.png" alt="cute kit">
 				            <div class="carousel-caption">
-				            	<p>Want a Rules refresher?</p>
+				            	<h3>Want a Rules refresher?</h3>
 				            </div>
 				        </div>
 				        <div class="item">
-				            <img src="http://cdn.oboxeditions.com/sites/prod/files/styles/gallery/public/article/top-10-cutest-kitten-gif-we-opened-pandoras-box.56091.jpg" alt="cute kit 2">
+				            <img id="carouselSlides" src="images/alexander-andrews-398573.jpg">
 				            <div class="carousel-caption">
-				            	<p>Browse our site for Rules links</p>
+				            	<h3>We've got your back!</h3>
 				            </div>
 				        </div>
 				    </div> 
@@ -138,8 +139,9 @@
 				        <span class="glyphicon glyphicon-chevron-right"></span>
 				    </a>
 				</div>
+			</div>
 		</div> <!-- jumbotron -->
-	</div>
+	</div> <!-- jumboContainer -->
 	<hr class="styledHr2">
 	<!-- Board Game Categories -->
 	<div class="container-fluid categoryAll text-center">
@@ -186,7 +188,7 @@
 			</div>
 		</div> <!-- category row -->
 	</div> <!-- container-fluid -->
-	<hr class="styledHr2">
+	<hr class="styledHrWhite">
 	<!-- Footer: Mission Statement-->
 	<footer class="text-center">
 		<div class="container footerContent">
