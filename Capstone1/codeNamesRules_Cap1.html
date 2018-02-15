@@ -22,28 +22,95 @@
 	<link rel="stylesheet" type="text/css" href="style_toTop.css">
 
 	<style type="text/css">
-
+		/*Reset styles for non-sticky navbar and background*/
 		html, body {
 			background: none;
+			padding-top: 0;
 		}
-
-		.leftBg {
-			height: 1000px;
-			background: url("images/femaleSpy.png") no-repeat;
+		.navbar-inverse {
+			margin-bottom: 0;
+		}
+		.pageContent {
+			padding-top: 70px;
+			padding-bottom: 70px;
+			background: url("images/Codenames/testBG.png") no-repeat fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
 			background-size: 100% 100%;
 		}
-		.rightBg {
-			height: 1000px;
-			background: url("images/maleSpy2.png") no-repeat;
-			background-size: 100% 100%;
+		/*Split converged background horizontally in half on mobile*/
+		@media (max-width: 768px) {
+			.pageContent {
+				padding-top: 0;
+			}
+			.leftBg {
+				padding-top: 0;
+				height: 300px;
+			}
+			.rightBg {
+				padding-top: 0;
+				height: 300px;
+			}
 		}
-
+		.pageRules {
+			background-color: #ffffe5;
+		}
+		.pageRules>.row {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.page-header {
+			border-bottom: none;
+		}
+		.overview {
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+		}
+		.overview h2 {
+			text-decoration: underline;
+		}
+		.overviewTxt {
+			padding: 10px;
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+		.team {
+			border-bottom: 2px solid black;
+		}
+		.redTeam img {
+			display: block;
+			margin: 0 auto;
+			height: 250px;
+		}	
+		.blueTeam img {
+			display: block;
+			margin: 0 auto;
+			height: 250px;
+		}
+		.doubleAgents {
+			border-bottom: 2px solid black;
+		}
+		.doubleAgents img {
+			margin: 0 auto;
+		}		
+		.bystanders {
+			border-bottom: 2px solid black;
+		}
+		.bystanders img {
+			margin: 0 auto;
+		}		
+		.assassin {
+			border-bottom: 2px solid black;
+		}
+		.assassin img {
+			margin: 0 auto;
+		}
 	</style>
-
 </head>
 <body>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse">
 			<div class="container-fluid">			
 				<!-- Navbar header -->
 				<div class="navbar-header">
@@ -71,6 +138,7 @@
 						<li class="dropdown navMainLi navLinkGames">
 							<a href="#" class="dropdown-toggle navMainLi" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
 							<ul class="dropdown-menu dropDownGameList">
+								<li id="partyGame"><a href="partyGames_Cap1.html">Party Board Games</a></li>
 								<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
 								<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
 							</ul>
@@ -114,16 +182,57 @@
 		</div>
 	</div>
 	
-	<div class="container-fluid">
+	<div class="pageContent container-fluid">
 		<div class="row">
 			<div class="leftBg col-sm-2 col-xs-6">
 			</div>
 			<div class="rightBg col-sm-2 col-xs-6 col-sm-push-8">
 			</div>
-			<div class="col-sm-8 col-sm-pull-2 col-xs-12">
+			<div class="pageRules col-sm-8 col-sm-pull-2 col-xs-12">
 				<div class="page-header text-center	">
 					<h1>Codenames</h1>					
 				</div>
+				<!-- Grab images of each component from BGG -->
+				<div class="overview row text-center">
+					<h2>Overview & Setup</h2>
+					<p class="overviewTxt">Climb a tree, wait for a fireman jump to fireman then scratch his face lick left leg for ninety minutes, still dirty use lap as chair if it fits, i sits man running from cops stops to pet cats, goes to jail cough furball so kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+				</div>				
+				<div class="team row">
+					<!-- Blue Team -->
+					<div class="blueTeam col-xs-6 text-center">
+						<img class="img-responsive" src="images/Codenames/blueTeam.png">
+						<h3>The Blue Team</h3>
+						<p>These cards are placed in front of their spymaster</p>
+					</div>
+					<!-- Red Team -->
+					<div class="redTeam col-xs-6 text-center">
+						<img class="img-responsive" src="images/Codenames/redTeam.png">
+						<h3>The Red Team</h3>
+						<p>These cards are placed in front of their spymaster</p>
+					</div>
+				</div>
+				<div class="doubleAgents row text-center">
+					<div class="col-xs-12">
+						<img class="img-responsive" src="images/Codenames/doubleAgents.png">
+						<h3>The Double Agent</h3>
+						<p>The Double agent belongs to the starting team. This means they have to guess one word more than their opponent.</p>
+					</div>
+				</div>
+				<div class="bystanders row text-center">
+					<div class="col-xs-12">
+						<img class="img-responsive" src="images/Codenames/bystander.png">
+						<h3>Innocent Bystanders</h3>
+						<p>These guys simply bother each team from identifying their members.</p>
+					</div>
+				</div>
+				<div class="assassin row text-center">
+					<div class="col-xs-12">
+						<img class="img-responsive" src="images/Codenames/assassin.png">
+						<h3>The Assassin</h3>
+						<p>Guess the Assassin and your team instantly loses.</p>
+					</div>
+				</div>
+
 			</div>
 
 			
