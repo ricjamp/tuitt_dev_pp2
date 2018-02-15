@@ -33,7 +33,7 @@
 		.pageContent {
 			padding-top: 70px;
 			padding-bottom: 70px;
-			background: url("images/Codenames/testBG.png") no-repeat fixed; 
+			background: url("images/Codenames/codenamesPageBg.png") no-repeat fixed; 
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
@@ -56,9 +56,8 @@
 		.pageRules {
 			background-color: #ffffe5;
 		}
-		.pageRules>.row {
-			padding-top: 10px;
-			padding-bottom: 10px;
+		.pageRules>.row img {
+			margin-top: 10px;
 		}
 		.page-header {
 			border-bottom: none;
@@ -78,6 +77,12 @@
 		.team {
 			border-bottom: 2px solid black;
 		}
+		.blueTeam {
+			border-right: 3px double black;			
+		}
+		.redTeam {
+			border-left: 3px double black;
+		}
 		.redTeam img {
 			display: block;
 			margin: 0 auto;
@@ -89,13 +94,13 @@
 			height: 250px;
 		}
 		.doubleAgents {
-			border-bottom: 2px solid black;
+			border-bottom: 2px solid black;		
 		}
 		.doubleAgents img {
 			margin: 0 auto;
-		}		
+		}	
 		.bystanders {
-			border-bottom: 2px solid black;
+			border-bottom: 2px solid black;		
 		}
 		.bystanders img {
 			margin: 0 auto;
@@ -106,6 +111,27 @@
 		.assassin img {
 			margin: 0 auto;
 		}
+		.idealSetup img {
+			margin: 0 auto;
+			margin-bottom: 10px;
+			height: 400px;
+		}
+		.idealSetup h4 {
+			margin-top: 150px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+		}
+		@media (max-width: 992px) {
+			.idealSetup h4 {
+			margin-top: 20px;
+			}
+		}
+		.gamePlayHeader {
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+		}
+
 	</style>
 </head>
 <body>
@@ -232,11 +258,23 @@
 						<p>Guess the Assassin and your team instantly loses.</p>
 					</div>
 				</div>
-
-			</div>
-
-			
-		</div>
+				<div class="idealSetup row text-center">
+					<div class="col-md-6 col-xs-12">
+						<img src="images/Codenames/setup.png">
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<h4>Ideal Setup as shown in the rulebook</h4>
+						<p>Purr while eating climb a tree, wait for a fireman jump to fireman then scratch his face. You are a captive audience while sitting on the toilet</p>
+					</div>
+				</div>
+				<div class="gamePlayHeader page-header text-center">
+					<h2>Game Play</h2>
+				</div>
+				<div class="row text-center" style="padding: 20px">
+					<p>Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked all of a sudden cat goes crazy hiding behind the couch until lured out by a feathery toy or ears back wide eyed and sometimes switches in french and say "miaou" just because well why not but small kitty warm kitty little balls of fur, eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap. Gate keepers of hell all of a sudden cat goes crazy, or annoy kitten brother with poking but shove bum in owner's face like camera lens. Cough furball into food bowl then scratch owner for a new one refuse to leave cardboard box or love to play with owner's hair tie. My left donut is missing, as is my right. Cough meoooow or pee in the shoe wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again. Terrorize the hundred-and-twenty-pound rottweiler and steal his bed, not sorry jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed munch on tasty moths or disappear for four days and return home with an expensive injury; bite the vet. </p>
+				</div>
+			</div> <!-- .pageRules -->
+		</div> <!-- row -->
 	</div>
 
 	<a href="#" class="go-top">Go Top</a>

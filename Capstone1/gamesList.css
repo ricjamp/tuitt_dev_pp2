@@ -1,0 +1,55 @@
+.listContent {
+	padding-bottom: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+    .listContent {
+	/*Minimize bottom padding, content too far from footer*/
+	padding-bottom: 100px;
+	}
+}
+
+.listHeader {
+	background-color: black;
+	color: white;
+	margin-top: 50px;
+	padding: 15px;
+	display: inline-block;
+	border: 1px solid white;
+}
+
+.gameChoice {
+	border: 1px solid white;
+	background-color: black;
+	color: white;
+}
+
+.gameChoice img {
+	margin: 15px;
+	height: 200px;
+	max-width: 300px;
+	border: 2px solid white;
+}
+
+.gameInfo {
+	text-align:left; 
+	padding:15px;
+}
+
+.gameInfo>.media-heading>small>a {
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+.btn-default {
+	background-color: #11114E;
+	background-image: none;
+	color: white;
+	border-color: white;
+	text-shadow: none;
+}
+
+/*Increased size footer on single content pages*/
+footer {
+	padding: 20px;
+}

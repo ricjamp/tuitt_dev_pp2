@@ -1,14 +1,22 @@
 /*From Tuts Codepen*/
 	.go-top {
 		position: fixed;
-		bottom: 1em; /*2em;*/
-		right: 1em; /*2em;*/
+		bottom: 5em;
+		right: 2em;
 		text-decoration: none;
-		color: yellow;
+		color: #FFFFE9;
 		background-color: rgba(0,0,0,0.3);
+		border: 2px solid white;
 		font-size: 12px;
 		padding: 1em;
 		display: none;
+	}
+
+	@media (max-width: 768px) {
+		.go-top {
+			bottom: 1.5em;
+			right: 3em;
+		}
 	}
 
 	.go-top:hover {

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<img src="pic831024.jpg" id="map-image" style="width: 448px; max-width: 100%; height: auto;" alt="" usemap="#map" />
+	<map name="map">
+	    <area class="parent" shape="rect" coords="317, 244, 370, 270" data-toggle="tooltip" data-trigger="hover" title="This is area 1">
+	    <area shape="rect" coords="42, 79, 67, 230" href="www.facebook.com"/>
+	    <area shape="rect" coords="42, 42, 169, 79" />
+	</map>
+
+	<h1>The Tooltip will appear below here:</h1>
+	<p></p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="imageMapResizer.min.js"></script>
+
+	<script>
+		$(document).ready(function(e){$("map").imageMapResize();});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip(container:'.parent');   
+		});
+
+		$("area").tooltip({ track: true });
+	</script>
+
+</body>
+</html>
