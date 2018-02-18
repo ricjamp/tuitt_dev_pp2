@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About: tl;dr gameRules</title>
+	<title>#imgTesting</title>
 
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,56 +12,74 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+	<!-- Personal Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="../Capstone1/styleNavbarBody.css">
+
+	<!-- Modal Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../Capstone1/styleModalForm.css">
+
+	<!-- Go To Top Button Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../Capstone1/style_toTop.css">
+
 	<style type="text/css">
+		/*Reset styles for non-sticky navbar and background*/
+		html, body {
+			padding-top: 0;
+			background: url(http://i.dailymail.co.uk/i/pix/2011/04/03/article-1372919-0B77B50800000578-612_468x345.jpg) no-repeat fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: 100% 100%;	
+		}
+		.navbar-inverse {
+			margin-bottom: 20px;
+		}
 
-		.aboutSite {
-			margin-top: 30px;
+		.page-header {
+			border-bottom: none;
+			background-color: black;
 			color: white;
-			background-color: #4A4E51;
 		}
 
-		.aboutSiteHead {
-			display: inline-block;
-			font-size: 3em;
-			text-decoration: underline;
+		.instruct {
+			background-color: black;
+			color: white;
 		}
 
-		.aboutSiteTxt {
-			display: inline-block;
-			padding: 5px;
+		.content {
+			position: absolute;
+			left: 45%;
+			top: 50%;
+			display: none;
+		}
+
+		#test1 {
+			background-color: red;
 		}
 
 	</style>
-
-	<!-- Personal Style Sheets -->
-	<link rel="stylesheet" type="text/css" href="styleNavbarBody.css">
-	<!-- siteName Font -->
-	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-
-	<!-- Modal Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="styleModalForm.css">
-
 </head>
 <body>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse">
 			<div class="container-fluid">			
 				<!-- Navbar header -->
 				<div class="navbar-header">
 					<!-- Logo image and Website Name -->
 					<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
-						<img src="images/Homepage/leftHalfMeeple.png">
+						<img src="../Capstone1/images/leftHalfMeeple.png">
 						<ul class="siteName">
 							<li>tl;dr</li>
 							<li>gameRules</li>
 						</ul>
-						<img src="images/Homepage/rightHalfMeeple.png">
+						<img src="../Capstone1/images/rightHalfMeeple.png">
 					</div>
 					<!-- Toggle button -->
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 			  	        <span class="icon-bar"></span>
-			  	        <span class="icon-bar"></span>				
+			  	        <span class="icon-bar"></span>
+			  	        <span class="icon-bar"></span>					
 					</button>
 				</div> <!-- navbar header -->
 				<!-- Collapsible Menu -->
@@ -73,9 +91,11 @@
 							<ul class="dropdown-menu dropDownGameList">
 								<li id="partyGame"><a href="partyGames_Cap1.html">Party Board Games</a></li>
 								<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
+								<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
 							</ul>
 						</li> <!-- drop down games list -->
-						<li class="navMainLi navLinkAbout"><a href="homepage_CapstoneOne_v1.html">Home</a></li>
+						<li class="navMainLi navLinkHome"><a href="homepage_CapstoneOne_v1.html">Home</a></li>
+						<li class="navMainLi navLinkAbout"><a href="aboutPage_Cap1.html">About</a></li>
 						<!-- Contact Form Modal Button-->
 						<li class="navMainLi navLinkContact">
 							<!-- Use a link instead of button to keep styles -->
@@ -86,7 +106,6 @@
 				</div>
 			</div> <!-- container fluid -->
 		</nav> 
-
 	<!-- Modal Contact Form, thank you w3schools -->
 	<div id="modalContactForm" class="modal">
 		<div class="modal-content">
@@ -114,59 +133,62 @@
 		</div>
 	</div>
 
-	<div class="container text-center aboutSite">
-		<h2 class="aboutSiteHead">About this Site</h2>
-		<div class="container">	
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="aboutSiteTxt">This site was made to comply with Tuitt Coding Bootcamp's Capstone 1 Requirements.</p>	
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="aboutSiteTxt">I'll probably use this as a template for making an app on android. Someday.</p>	
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="aboutSiteTxt" style="font-size: 10px;">P.S. <br> It was also made as a selfish project to have my board games' rules on-hand at all times.</p>	
-				</div>
-			</div>
+	<!-- Image Map -->
+	<div class="container">
+		<div class="row page-header text-center">
+			<h1>The Castles of Burgundy</h1>
 		</div>
-		<h2 class="aboutSiteHead">Credits</h2>
-		<div class="container">	
-			<div class="row">
-				<div class="col-sm-6 col-xs-12">
-					<h4>Board Game Images:</h4>
-					<p class="aboutSiteTxt">All credits for the images belong to the images in BGG (boardgamegeek.com), provided by the image's respective publisher.</p>	
-				</div>
-				<div class="col-sm-6 col-xs-12">
-					<h4>Other Images:</h4>
-					<p class="aboutSiteTxt">Alexander Andrews on Unsplash for the cat picture.</p>	
-					<p class="aboutSiteTxt"> Free Vectors via <a href="https://www.Vecteezy.com/">Vecteezy!</a> for the Spy Background.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<h4>Content Description:</h4>
-					<p class="aboutSiteTxt">Content Description from BGG (boardgamegeek.com) and any rules about a board game based on interpretation from this website author.</p>	
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-xs-12">
-					<h4>Disclaimer:</h4>
-					<p class="aboutSiteTxt">tl;dr gameRules does not seek to profit from this website and promotes each game with links to bgg and their corresponding publisher.</p>	
-				</div>
-			</div>	
+		<div class="instruct text-center">
+			<h5>Click on areas of the game board to find out what they do!</h5>
 		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="pic831024.jpg" id="map-image" class="img-responsive" style="display: block; margin: 0 auto;width: 448px; max-width: 100%; height: auto;" alt="" usemap="#map">
 
+				<map name="map">
+				    <area shape="rect" coords="317, 244, 370, 270" onclick="toggleDiv('test1')">
+				    <area shape="rect" coords="42, 79, 67, 230" onclick="toggleDiv('test2')">
+				    <area shape="rect" coords="42, 42, 169, 79" onclick="toggleDiv('test3')">
+				</map>
+
+			</div>
+		</div>
+		<!-- Row for Testing Toggling Visibility of Divs -->
+		<div class="row">
+			<div class="col-xs-12" style="position: relative;height: 200px;border: 1px solid black">
+				<div class="content" id="test1"><h1>I've been seen!</h1><p>SHOW ME! - 1</p></div>
+				<p class="content" id="test2">SHOW ME TOO! - 2</p>
+				<p class="content" id="test3">THREE ME! - 3</p>
+			</div>
+		</div>
 	</div>
+	
+	<a href="#" class="go-top">Go Top</a>
 
 	<!-- Jquery and Bootstrap JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- Modal Contact Form JS -->
-	<script type="text/javascript" src="modalContactForm.js"></script>
+	<script type="text/javascript" src="../Capstone1/modalContactForm.js"></script>
+
+	<!-- Image Map Tools -->
+	<script src="imageMapResizer.min.js"></script>
+	<script>
+		$(document).ready(function(e){$("map").imageMapResize();});
+	</script>
+	<script type="text/javascript">
+	var toggleDiv = function (id) {
+        var contents = document.getElementsByClassName('content');
+
+	    // Loop over all content divs and show the active and hide all others.
+	    for (var i = 0; i < contents.length; i++)
+	    	//If at correct id, content is displayed, else none.
+	        contents[i].style.display = contents[i].id == id ? 'block' : 'none';
+	}	
+	</script>
+
+	<!-- Go to top JS -->
+	<script type="text/javascript" src="../Capstone1/toTop.js"></script>
 
 </body>
 </html>

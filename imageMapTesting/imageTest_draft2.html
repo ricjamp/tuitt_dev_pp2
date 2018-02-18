@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>#imgTesting</title>
+
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Personal Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="../Capstone1/styleNavbarBody.css">
+
+	<!-- Modal Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../Capstone1/styleModalForm.css">
+
+	<!-- Go To Top Button Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../Capstone1/style_toTop.css">
+
+	<style type="text/css">
+		/*Reset styles for non-sticky navbar and background*/
+		html, body {
+			padding-top: 0;
+			background: url(http://i.dailymail.co.uk/i/pix/2011/04/03/article-1372919-0B77B50800000578-612_468x345.jpg) no-repeat fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: 100% 100%;	
+		}
+		.navbar-inverse {
+			margin-bottom: 20px;
+		}
+
+		.page-header {
+			border-bottom: none;
+			background-color: black;
+			color: white;
+		}
+
+		.instruct {
+			background-color: black;
+			color: white;
+		}
+
+		.content {
+			position: absolute;
+			left: 45%;
+			top: 50%;
+			display: none;
+		}
+
+		#test1 {
+			background-color: red;
+		}
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+			<div class="container-fluid">			
+				<!-- Navbar header -->
+				<div class="navbar-header">
+					<!-- Logo image and Website Name -->
+					<div class="navbar-brand text-center"> <!-- CSS: Set brand to center when on mobile -->
+						<img src="../Capstone1/images/leftHalfMeeple.png">
+						<ul class="siteName">
+							<li>tl;dr</li>
+							<li>gameRules</li>
+						</ul>
+						<img src="../Capstone1/images/rightHalfMeeple.png">
+					</div>
+					<!-- Toggle button -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenuLinks" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+			  	        <span class="icon-bar"></span>
+			  	        <span class="icon-bar"></span>
+			  	        <span class="icon-bar"></span>					
+					</button>
+				</div> <!-- navbar header -->
+				<!-- Collapsible Menu -->
+				<div class="collapse navbar-collapse navbar-right" id="navMenuLinks">
+					<ul class="nav navbar-nav">
+						<!-- Drop Down Menu for Games List -->
+						<li class="dropdown navMainLi navLinkGames">
+							<a href="#" class="dropdown-toggle navMainLi" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games List <span class="caret"></span></a>
+							<ul class="dropdown-menu dropDownGameList">
+								<li id="partyGame"><a href="partyGames_Cap1.html">Party Board Games</a></li>
+								<li id="stratGame"><a href="stratGames_Cap1.html">Strategy Board Games</a></li>
+								<li id="themeGame"><a href="themeGames_Cap1.html">Thematic Board Games</a></li>
+							</ul>
+						</li> <!-- drop down games list -->
+						<li class="navMainLi navLinkHome"><a href="homepage_CapstoneOne_v1.html">Home</a></li>
+						<li class="navMainLi navLinkAbout"><a href="aboutPage_Cap1.html">About</a></li>
+						<!-- Contact Form Modal Button-->
+						<li class="navMainLi navLinkContact">
+							<!-- Use a link instead of button to keep styles -->
+							<a id="contactBtn" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a>
+							<!-- Above attributes used to auto-close toggle menu when collapsed -->
+						</li>
+					</ul>
+				</div>
+			</div> <!-- container fluid -->
+		</nav> 
+	<!-- Modal Contact Form, thank you w3schools -->
+	<div id="modalContactForm" class="modal">
+		<div class="modal-content">
+			<!-- Modal Close Button -->
+			<span class="closeForm">&times</span>
+			<!-- Contact Form -->
+				<div class="container formContainer">
+					<form>
+						<h4 class="text-center">Want us to add a game?<br>Comments or Suggestions?</h4>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Name">
+						</div> <!-- form-group -->
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Email">
+						</div> <!-- form-group -->
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Subject">
+						</div> <!-- form-group -->
+						<div class="form-group">
+							<textarea class="form-control" placeholder="Game Suggestions" rows="7"></textarea>
+						</div> <!-- form-group -->
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+		</div>
+	</div>
+
+	<!-- Image Map -->
+	<div class="container">
+		<div class="row page-header text-center">
+			<h1>The Castles of Burgundy</h1>
+		</div>
+		<div class="instruct text-center">
+			<h5>Click on areas of the game board to find out what they do!</h5>
+		</div>
+		<div class="row">
+			<!-- Image Map Generated by http://www.image-map.net/ -->
+			<img src="cobGameBoard.jpg" usemap="#board-map" style="max-width: 100%">
+
+			<map name="board-map">
+			    <area target="" alt="ships" title="ships" href="" coords="389,1504,1553,1634" shape="rect">
+			    <area target="" alt="goods" title="goods" href="" coords="581,395,417,1342,639,1346,786,395" shape="poly">
+			    <area target="" alt="vp track" title="vp track" href="" coords="246,1955,595,29,492,29,92,2075,486,2083,527,1832,653,1842,626,2075,1019,2082,1043,1843,1170,1839,1160,2085,1960,2079,3798,2092,3380,58,1943,22,598,29,581,97,1950,101,3291,131,3650,1957,1306,1952,1317,1723,930,1719,906,1959,773,1955,800,1719,417,1712,383,1955" shape="poly">
+			    <area target="" alt="tile4" title="tile4" href="" coords="1950,1704,1827,1649,1714,1704,1703,1834,1809,1892,1943,1827,2066,1896,2193,1827,2319,1903,2439,1831,2559,1903,2679,1838,2665,1711,2545,1646,2429,1714,2313,1649,2193,1711,2070,1646" shape="poly">
+			    <area target="" alt="good4" title="good4" href="" coords="1957,1242,1957,1615,2135,1622,2141,1670,2237,1670,2237,1625,2398,1615,2388,1249" shape="poly">
+			    <area target="" alt="animalBonus" title="animalBonus" href="" coords="2949,1513,2781,1513,2795,1673,2771,1697,2788,1913,3017,1909,2990,1701,2966,1677" shape="poly">
+			    <area target="" alt="mineBonus" title="mineBonus" href="" coords="3053,1519,3073,1677,3059,1711,3090,1916,3320,1916,3282,1704,3244,1674,3224,1520" shape="poly">
+			    <area target="" alt="knowBonus" title="knowBonus" href="" coords="3319,1519,3500,1516,3520,1677,3548,1701,3589,1916,3370,1916,3329,1708,3353,1677" shape="poly">
+			    <area target="" alt="tile5" title="tile5" href="" coords="1112,1020,1013,969,907,1013,893,1123,982,1178,886,1253,859,1355,961,1417,1081,1359,1197,1420,1314,1359,1317,1243,1218,1191,1095,1246,1087,1246,999,1178,1105,1127,1221,1175,1320,1123,1334,1010,1228,969" shape="poly">
+			    <area target="" alt="good5" title="good5" href="" coords="1782,1005,1368,1002,1361,1132,1313,1142,1306,1210,1348,1224,1348,1361,1779,1364" shape="poly">
+			    <area target="" alt="roundTrack" title="roundTrack" href="" coords="619,151,691,151,725,106,762,151,896,154,927,109,961,151,1105,154,1142,109,1173,154,1306,154,1337,106,1375,154,1519,147,1549,103,1580,147,1645,151,1645,291,1584,304,1584,359,1525,359,1512,301,1361,304,1361,359,1306,359,1306,304,1156,311,1152,359,1081,366,1087,304,933,318,930,352,865,363,868,304,725,315,718,356,660,356,663,304,588,294" shape="poly">
+			    <area target="" alt="tile3" title="tile3" href="" coords="3103,1202,3007,1260,3017,1376,3141,1428,3243,1370,3366,1431,3466,1373,3449,1267,3339,1202,3428,1134,3397,1034,3291,986,3195,1038,3065,976,2980,1024,2990,1130,3106,1192,3206,1137,3339,1202,3236,1270" shape="poly">
+			    <area target="" alt="good3" title="good3" href="" coords="2949,1022,2552,1015,2573,1378,2997,1374,2973,1241,3024,1227,3014,1169,2959,1142" shape="poly">
+			    <area target="" alt="specialDGreen" title="specialDGreen" href="" coords="1070,482,964,534,954,619,1046,674,1156,626,1156,527" shape="poly">
+			    <area target="" alt="tile6" title="tile6" href="" coords="1142,726,1046,681,940,729,927,832,1022,883,1142,825,1241,880,1348,822,1348,726,1259,675,1365,623,1371,527,1279,483,1176,534,1170,620,1259,681" shape="poly">
+			    <area target="" alt="good6" title="good6" href="" coords="1402,515,1389,635,1344,638,1344,703,1378,720,1378,833,1786,830,1789,515" shape="poly">
+			    <area target="" alt="tile1" title="tile1" href="" coords="1933,183,1833,138,1738,183,1738,272,1827,313,1940,258,2035,303,2135,262,2237,313,2336,265,2439,323,2532,282,2525,193,2429,149,2336,190,2237,139,2138,183,2035,132" shape="poly">
+			    <area target="" alt="good1" title="good1" href="" coords="2094,293,2176,293,2182,327,2323,327,2350,638,1950,621,1950,324,2090,324" shape="poly">
+			    <area target="" alt="tile2" title="tile2" href="" coords="3115,557,3002,506,2916,543,2926,639,3029,697,2947,759,2957,841,3056,899,3159,844,3279,906,3371,844,3347,759,3245,701,3152,756,3028,698,3130,640,3250,698,3332,640,3315,554,3209,503" shape="poly">
+			    <area target="" alt="good2" title="good2" href="" coords="2881,539,2508,535,2525,847,2928,850,2915,734,2952,717,2935,669,2901,665" shape="poly">
+			    <area target="" alt="centerMarket" title="centerMarket" href="" coords="2042,720,1936,662,1840,714,1840,809,1950,864,1871,871,1847,844,1813,847,1786,867,1789,895,1809,908,1789,950,1796,970,1813,991,1840,984,1868,967,1844,919,1868,871,1950,864,1950,973,1840,1035,1837,1131,1943,1186,2056,1131,2172,1196,2285,1138,2401,1203,2497,1145,2487,1035,2374,984,2374,891,2449,898,2484,932,2449,960,2456,991,2511,1004,2528,977,2532,939,2508,915,2528,891,2504,854,2460,857,2449,902,2378,881,2470,820,2466,720,2371,666,2265,727,2155,662" shape="poly">
+			    <area target="" alt="castleBonus" title="castleBonus" href="" coords="2603,137,2798,140,2812,287,2801,308,2812,424,2668,424,2658,301,2616,294" shape="poly">
+			    <area target="" alt="buildBonus" title="buildBonus" href="" coords="2846,151,3021,151,3048,291,3031,312,3058,425,2904,425,2887,312,2857,295" shape="poly">
+			    <area target="" alt="shipBonus" title="shipBonus" href="" coords="3076,153,3254,156,3281,306,3264,306,3284,433,3137,430,3113,296,3093,296" shape="poly">
+			</map>
+
+
+			<!-- Image Map Generated by http://www.image-map.net/ -->
+			<img src="cobPlayerBoard.jpg" usemap="#player-map" style="max-width: 100%">
+
+			<map name="player-map">
+			    <area target="" alt="usedDice" title="usedDice" href="" coords="941,98,53" shape="circle">
+			    <area target="" alt="vpTable" title="vpTable" href="" coords="331,208,405,44" shape="rect">
+			    <area target="" alt="workers" title="workers" href="" coords="67,647,52" shape="circle">
+			    <area target="" alt="silver" title="silver" href="" coords="64,54,53,54,33,65,21,82,14,106,11,131,20,163,31,182,47,195,65,199,91,190,107,166,115,135,115,101,104,76,88,58" shape="poly">
+			    <area target="" alt="goodsSold" title="goodsSold" href="" coords="311,34,226,119" shape="rect">
+			    <area target="" alt="goods" title="goods" href="" coords="215,33,129,34,127,216,313,216,311,130,215,129" shape="poly">
+			    <area target="" alt="buildQ" title="buildQ" href="" coords="190,593,141,619,140,675,189,702,241,675,296,704,345,676,397,703,448,673,448,618,398,591,345,620,294,593,241,621" shape="poly">
+			    <area target="" alt="diceAct" title="diceAct" href="" coords="990,429,990,488,1003,488,1001,702,942,703,945,487,958,487,957,429" shape="poly">
+			    <area target="" alt="silvAct" title="silvAct" href="" coords="875,590,899,591,900,607,916,621,917,704,860,703,860,616,873,611" shape="poly">
+			    <area target="" alt="boardNum" title="boardNum" href="" coords="662,705,640,684" shape="rect">
+			    <area target="" alt="knowUse" title="knowUse" href="" coords="14,247,72,350" shape="rect">
+			    <area target="" alt="shipUse" title="shipUse" href="" coords="79,250,134,351" shape="rect">
+			    <area target="" alt="animalUse" title="animalUse" href="" coords="143,248,200,349" shape="rect">
+			    <area target="" alt="castUse" title="castUse" href="" coords="206,249,263,350" shape="rect">
+			    <area target="" alt="wareUse" title="wareUse" href="" coords="13,358,71,458" shape="rect">
+			    <area target="" alt="buildUse" title="buildUse" href="" coords="79,355,135,458" shape="rect">
+			    <area target="" alt="churchUse" title="churchUse" href="" coords="143,358,199,458" shape="rect">
+			    <area target="" alt="marketUse" title="marketUse" href="" coords="205,358,261,456" shape="rect">
+			    <area target="" alt="dormUse" title="dormUse" href="" coords="13,463,69,565" shape="rect">
+			    <area target="" alt="bankUse" title="bankUse" href="" coords="78,464,134,565" shape="rect">
+			    <area target="" alt="hallUse" title="hallUse" href="" coords="140,465,199,566" shape="rect">
+			    <area target="" alt="towerUse" title="towerUse" href="" coords="205,463,262,564" shape="rect">
+			    <area target="" alt="mineUse" title="mineUse" href="" coords="283,465,339,563" shape="rect">
+			    <area target="" alt="regionCity" title="regionCity" href="" coords="511,79,463,108,463,161,511,187,556,162,604,190,652,160,695,188,744,161,790,189,837,162,836,108,792,82,743,110,697,80,652,109,603,82,559,108" shape="poly">
+			    <area target="" alt="regionCastle" title="regionCastle" href="" coords="650,267,603,239,604,191,650,163,695,188,697,239" shape="poly">
+			    <area target="" alt="regionCastle" title="regionCastle" href="" coords="370,320,325,347,323,401,371,425,418,401,417,346" shape="poly">
+			    <area target="" alt="regionCastle" title="regionCastle" href="" coords="929,319,881,347,883,399,928,427,977,399,974,345" shape="poly">
+			    <area target="" alt="regionCastle" title="regionCastle" href="" coords="649,479,603,508,603,561,648,586,698,562,695,507" shape="poly">
+			    <area target="" alt="regionShip" title="regionShip" href="" coords="603,241,558,269,556,321,603,347,650,322,698,346,744,320,743,265,699,241,651,270" shape="poly">
+			    <area target="" alt="regionShip" title="regionShip" href="" coords="419,403,371,429,371,481,416,508,418,560,463,586,463,638,511,668,557,643,557,589,603,560,603,509,555,481,511,507,464,478,465,428" shape="poly">
+			    <area target="" alt="regionAnimal" title="regionAnimal" href="" coords="557,428,511,401,467,426,466,478,511,506,556,479,604,506,649,478,648,425,604,399" shape="poly">
+			    <area target="" alt="regionAnimal" title="regionAnimal" href="" coords="882,189,881,242,926,266,927,318,881,346,837,321,786,348,744,321,745,265,698,242,696,190,741,161,787,189,837,161" shape="poly">
+			    <area target="" alt="regionKnow" title="regionKnow" href="" coords="417,189,418,240,368,267,371,319,419,348,463,319,511,347,555,321,555,267,603,242,603,190,555,161,514,188,461,161" shape="poly">
+			    <area target="" alt="regionKnow" title="regionKnow" href="" coords="695,400,649,428,651,480,697,508,743,480,790,508,834,480,834,426,791,401,744,427" shape="poly">
+			    <area target="" alt="regionMine" title="regionMine" href="" coords="882,399,835,427,835,481,790,509,742,481,697,509,698,562,742,589,788,559,836,588,882,560,883,509,927,480,928,427" shape="poly">
+			    <area target="" alt="regionCity" title="regionCity" href="" coords="462,320,417,348,419,404,465,428,510,399,558,428,604,400,651,425,696,400,745,428,790,400,834,426,882,400,883,345,835,321,787,349,744,320,697,347,652,321,603,348,557,321,511,349" shape="poly">
+			    <area target="" alt="regionCity" title="regionCity" href="" coords="602,668,647,640,697,668,741,640,790,667,835,642,835,588,789,559,742,590,697,561,648,589,602,561,559,589,559,642" shape="poly">
+			</map>
+		</div>
+		<!-- Row for Testing Toggling Visibility of Divs -->
+		<div class="row">
+			<div class="col-xs-12" style="position: relative;height: 200px;border: 1px solid black">
+				<div class="content" id="test1"><p>SHOW ME! - 1</p></div>
+				<p class="content" id="test2">SHOW ME TOO! - 2</p>
+				<p class="content" id="test3">THREE ME! - 3</p>
+			</div>
+		</div>
+	</div>
+	
+	<a href="#" class="go-top">Go Top</a>
+
+	<!-- Jquery and Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Modal Contact Form JS -->
+	<script type="text/javascript" src="../Capstone1/modalContactForm.js"></script>
+
+	<!-- Image Map Tools -->
+	<script src="imageMapResizer.min.js"></script>
+	<script>
+		$(document).ready(function(e){$("map").imageMapResize();});
+	</script>
+	<script type="text/javascript">
+	var toggleDiv = function (id) {
+        var contents = document.getElementsByClassName('content');
+
+	    // Loop over all content divs and show the active and hide all others.
+	    for (var i = 0; i < contents.length; i++)
+	    	//If at correct id, content is displayed, else none.
+	        contents[i].style.display = contents[i].id == id ? 'block' : 'none';
+	}	
+	</script>
+
+	<!-- Go to top JS -->
+	<script type="text/javascript" src="../Capstone1/toTop.js"></script>
+
+</body>
+</html>
