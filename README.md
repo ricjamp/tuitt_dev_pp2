@@ -9,7 +9,7 @@ Capstone 1 :
 
 Capstone 2 : 
 
-  Learned more about HTML and CSS, and learned Javascript and PHP basics. Applied my learnings by creating a pseudo-terminal gui to access a database to do CRUD tasks.
+  Learned more about HTML and CSS, and learned Javascript and PHP basics. Applied what I learned by creating a pseudo-terminal gui to access a database to do CRUD tasks.
 
 Capstone 3 :
 
